@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video width="560" poster="imagens/Felipe02 copiar.jpg" controls>
+        <source src="midia/meu-video2.mp4" type="video/mp4">
+        <source src="midia/Meu-Video2.mkv" type="video/mkv">
+        <source src="midia/meu-video2.ogv" type="video/ogv">
+        <source src="midia/Meu-Video.webm" type="video/webm">
+    </video>
+    <p>Seu navegador não tem compatibilidade com reprodução de vídeo.(caso não tenha aparecido nenhum vídeo.)</p>
+    <p>Tags usadas nessa página.</p>
+    <p>
+        <pre>
+            <code>
+            &lt;video <mark>width</mark>="560" <mark>poster</mark>="imagens/Felipe02 copiar.jpg" <mark>controls</mark>&gt;
+                &lt;source src="midia/meu-video2.mp4" type="video/mp4"&gt;
+                &lt;source scr="midia/meu-video2.mkv type="video/mkv"&gt;
+                &lt;source scr="midia/meu-video2.ogv type="video/ogv"&gt;
+                &lt;source src="midia/Meu-Video.webm" type="video/webm"&gt;
+            &lt;/video&gt;
+            </code>
+        </pre>
+    </p>
+<p>Atributos da tag &lt;video&gt;:</p>
+<ul>
+    <li><mark>width</mark>: Vai indicar a largura que o vídeo vai ter na tela. Nesse exemplo, 560px.
+    <li><mark>poster</mark>:Configura uma imagem que vai aparecer como uma capa(Thumbnail), enquanto o visiante não aperta o play para reproduzir o vídeo.
+    <li><mark>controls</mark>: Vai configurar se os controles vão aparecer na parte inferior da mídia. Por padrão, os controles não aparecerão, mas basta colocar a palavra "controls" na tag &lt;video&gt;.
+    <li>autoplay: Diz para o navegador se o vídeo vai começar a tocar automaticamente, assim que a página for carregada.
+</ul>
+<h1>Inserindo vídeos do YoutTube</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LBL4RmZjRjk?si=HsOg3GvIJ8WUGKXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>O que foi feito para que esse vídeo do YouTube esteja aqui no site foi simplesmente indo em "compartilhar" no vídeo do YouTube e logo em seguida clicando na área "incorporar" com isso ele nos dará tegs prontas especificas daquele vídeo apenas para colocar no nosso site. </p>
+<p>
+    <pre>
+        <code>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/LBL4RmZjRjk?si=HsOg3GvIJ8WUGKXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+        </code>
+    </pre>
+</p>
+
+<p><a href="https://vimeo.com/pt-br?utm_medium=cpc&utm_source=google&utm_campaign=Core_Search_INTL_BR-PT_Google_Buy_Brand_Evergreen&utm_term=vimeo&utm_adgroup=Vimeo&campaignid=21847104890&adgroupid=170169842155&device=c&gad_source=1&gclid=CjwKCAiA2JG9BhAuEiwAH_zf3pBCDdv5JCSK6aLGR8mnij-ewBAhZBk6Ae5iWOV4NK3NekvbG5h0MRoCKbAQAvD_BwE&gclsrc=aw.ds" target="_blank" rel="external">Vimel</a> é um site indicado para hospedagem de vídeo para sites assim como YouTube</p>
+
+<p><a href="index.html" rel="prev">Voltar.</a></p>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática "class"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p><a href="seletoresid.html" target="_self" rel="prev">Voltar</a> para praticar o conceito dos "id's"</p>
+    <hr>
+    <h1>Classe (Class)</h1>
+    <p>
+        <pre>
+            <code>
+               (css) . = class (html)
+            </code>
+        </pre>
+    </p>
+    <p>Classe são basicamente entres aspas a mesma coisa da funcionalidade dos identificadores(id) porém com uma diferença na maneira como usamos. No caso, os identificadores(id's) são usados exclusivamente(podendo ser mencionado apenas uma vez), já as classes(class) pode-se utilizar quantas vezes for necessário de acordo com a funcão estipulada para elas, no caso vou demonstrar com exemplos.</p>
+    <hr>
+    <h2>Prática (Class)</h2>
+    <h3>Demonstração</h3>
+    <p class="shiftplays">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis possimus alias cupiditate quae odio sapiente rem exercitationem voluptatem aspernatur totam maiores eveniet ab quaerat aperiam nihil, repellat, dolores molestiae voluptatibus!</p>
+    <p class="satanas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum expedita sit sed nobis animi quidem ab accusamus incidunt quasi aspernatur necessitatibus, accusantium consequuntur obcaecati quo qui, amet officiis nemo ex!</p>
+    <p class="shiftplays">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eveniet ducimus nostrum ad numquam accusantium, pariatur quaerat enim earum corporis maiores expedita iste! Voluptates inventore quam facere et a minima.</p>
+    <p class="satanas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse impedit, quidem dolore necessitatibus sint, nesciunt voluptatem, ipsam dolorum nihil sed quod? Odio quidem nam non dicta provident esse perferendis officiis.</p>
+    <h3>html</h3>
+    <p>
+        <pre>
+            <code>
+&lt;p <mark style="background-color:sandybrown;">class="shiftplays"</mark>&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis possimus alias cupiditate quae odio sapiente rem exercitationem voluptatem aspernatur totam maiores eveniet ab quaerat aperiam nihil, repellat, dolores molestiae voluptatibus!&lt;/p&gt;
+&lt;p <mark style="background-color:violet;">class="satanas"</mark>&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum expedita sit sed nobis animi quidem ab accusamus incidunt quasi aspernatur necessitatibus, accusantium consequuntur obcaecati quo qui, amet officiis nemo ex!&lt;/p&gt;
+&lt;p <mark style="background-color:sandybrown;">class="shiftplays"</mark>&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eveniet ducimus nostrum ad numquam accusantium, pariatur quaerat enim earum corporis maiores expedita iste! Voluptates inventore quam facere et a minima.&lt;/p&gt;
+&lt;p <mark style="background-color:violet;">class="satanas"</mark>&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse impedit, quidem dolore necessitatibus sint, nesciunt voluptatem, ipsam dolorum nihil sed quod? Odio quidem nam non dicta provident esse perferendis officiis.&lt;/p&gt;
+            </code>
+        </pre>
+    </p>
+    <h3>css</h3>
+    <p>
+        <pre>
+            <code>
+                p<mark style="background-color:sandybrown;">.</mark>shiftplays {
+<mark></mark>
+                    font-family: 'Coluna Rounded', 'Gotham', 'sans-serif';
+                }
+                
+                p<mark style="background-color:violet;">.</mark>satanas {
+                
+                    font-family:  serif;
+                }
+            </code>
+        </pre>
+    </p>
+    <p>Percebe que deixei duas classes como "shiftplays" e outras duas como "satanas"? E nas css configuramos cada uma com base nessas duas especificações que fizemos? Bom basicamente é bem isso</p>
+    <hr>
+    <p class="next"><a href="seletorespseudoclass.html" target="_self" rel="next">Clique aqui</a> para práticar as pseudo-classes</p>
+</body>
+</html>

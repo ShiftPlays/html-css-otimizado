@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/*Em html - "id" (propriedade) = em CSS - "#" (cerquilha)
+em html - "class" (propriedade) = em CSS - "."
+*/
+body {
+    background-color: rgb(193, 233, 235);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1#principal{
+    text-align:center;
+    color:rgb(99, 99, 241);
+}
+
+h1 {
+    text-align:left;
+}
+
+h2 {
+    text-align:left;
+}
+
+p {
+    text-align:justify;
+    text-indent:30px;
+}
+
+p#tag { 
+    color:blue;
+}
+
+p#CSS {
+    color:midnightblue;
+}
+
+p#esquerda {
+    text-align:right;
+}

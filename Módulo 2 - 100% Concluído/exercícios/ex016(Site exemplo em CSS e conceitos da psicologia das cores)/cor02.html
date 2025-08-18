@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+            /* ANOTAÇÕES EM CSS - "*" E "/" */
+
+        * { /* Configurações globais das CSS */
+            height: 100%;
+        }
+
+        body { 
+        /* "to right" - para direita. 
+           
+           "to left" - para esquerda.
+           
+           "to top" - para cima.
+           
+           "to bottom" - para baixo.
+
+           "15deg" - para o ângulo que você quiser(No caso cada número antes do "deg" é a numerção do ângulo).
+        */ 
+            background-image: linear-gradient(to right, #78ABBF 1%, #78ABBF, #0F168C, #0D0259, #080726);
+            /* Pode colocar quantas cores quiser
+
+            /* É indicado colocar de 3 a 5 cores no site para que não compliquemos nossa cabeça em desenvilmento - indicação Gustavo Guanabara.
+
+            /* Os números com "%" depois dos valores de cores antes da virgula, diz a respeito do quantos porcento queremos a cor ocupando a tela no site*/
+            
+            background-attachment: fixed; 
+            /*para fixar as cores no site*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>

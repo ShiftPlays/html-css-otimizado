@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads</title>
+</head>
+<body>
+    <h1>Downloads</h1>
+    <p>Obs: O arquivo interno da página principal está dentro de uma pasta, o que torna a forma de direcionar ele diferente de simplesmente "&lt;a href="index.html" target="_self" rel="prev"&gt; para:</p>
+    <p>
+        <pre>
+            <code>
+            &lt;p&gt;&lt;a href="<mark>../</mark>index.html" target="_self" rel="prev"&gt;
+            </code>
+        </pre>
+    </p>
+    <p>(<mark style="background-color:blueviolet;">rel="prev"</mark> tem mais haver com facilitar os mecanismos de busca do google a encontrar o sistema de navegação que você está criando para seu site, em outras palavras você está dizendo ao google qual é essa página, orientando ela com base no seu dizer e não no dizer do google.)</p>
+    <p>Mais informações a respeito do atríbuto "rel" (&lt;a href="" target="" <mark>rel=""</mark>&gt;) você encontra da primeira página.</p>
+    <h2>links para Downloads</h2>
+    <ul>
+        <li><a href="Livro/CNH Fernando Antônio Dias Pereira.pdf" downlaod="CNH Fernando Antônio Dias Pereira" type="application/pdf">Baixar o CNH em PDF</a></li>
+        <li><a href="Livro/CNH Fernando Antônio Dias Pereira.rar" download="Livro/Fernando Antônio Dias Pereira" type="application/vnd.rar">CNH compactado em ZIP</a></li>
+        <li><a href="Imagens/MINECRAFT KENNETHNANDO EZZIO VS HEROBRINE.rar" download="Imagem ShiftPlays Herobrine.jpg" type="application/vnd.rar">Thumbnail herobrine</a></li>
+        <li><a href="Jogos/Cat Mario.rar.rar"></a></li>
+    </ul>
+<p>Explicação por trás de cada link para download:</p>
+<p>
+    <pre>
+        <code>
+<mark style="background-color: aquamarine;">
+&lt;ul&gt;
+    &lt;li&gt;&lt;a href="Livro/CNH Fernando Antônio Dias Pereira.pdf" download="CNH Fernando Antônio Dias Pereira" type="application/vnd.rar"&gt;&lt;/a&gt;
+&lt;/ul&gt;
+</mark>    
+        </code>
+    </pre>
+</p>
+<p>Na mesma linha de tag &lt;a href="" &gt; que aprendemos mais cedo vulgo as âncoras, no HTML5, essas mesma tag recebeu aguns atributos especiais para fazer download.</p>
+<p>Atributos com o nome "download"(&lt;a href="" <mark>download=""</mark> type=""&gt;) e "type"(&lt;a href="" downlaod="" <mark>type=""</mark> &gt;) foram adicionados para efetuar download com uma lista de media types para auxiliar nas modalidades de arquivos como .rar, .zip entre outros que se encontra facilmente no site da <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">IANA.org</a></p>
+<p>Esse site vai ajudar muito na necessidade de consultar as informações certas para o atributo "type" em caso de arquivos desconhecidos(exemplo: .rar)</p>
+
+<p><a href="../index.html" target="_self" rel="prev">Voltar a página principal</a></p>
+    
+</body>
+</html>

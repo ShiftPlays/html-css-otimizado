@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Children</title>
+    <style>
+        footer > p {
+
+    color:brown
+}
+    </style>
+</head>
+<body>
+    <p><a href="pseudoelemento.html" target="_self" rel="_prev">Voltar</a> para pseudoelemento</p>
+    <h1>Children (filho/criança)</h1>
+    <p>
+        <pre>
+            <code>
+               (css) &gt; = children (html)
+            </code>
+        </pre>
+    </p>
+<hr>
+<h2>Exemplo</h2>
+<footer>
+    <p>Exemplo shiftplays QI de serafim</p>
+</footer>
+<h3>html</h3>
+<p>
+    <pre>
+        <code>
+&lt;footer&gt;
+    &lt;p&gt;Exemplo shiftplays QI de serafim&lt;/p&gt;
+&lt;/footer&gt;
+        </code>
+    </pre>
+</p>
+<p>Percebe que a tag &lt;p&gt; está dentro da tag &lt;footer&gt; com isso considere o que será feito nas css.</p>
+<h3>css</h3>
+<p>
+    <pre>
+        <code>
+&lt;style&gt;
+
+footer <mark>></mark> p {
+
+color:brown
+}
+
+&lt;/style&gt;
+        </code>
+    </pre>
+</p>
+<p>Percebe que o colchete angular (&gt;) está indicando que estamos alterando a tag "p" dentro de "footer"? Basicamente o conceito de <mark>children</mark> é isso.</p>
+</body>
+</html>

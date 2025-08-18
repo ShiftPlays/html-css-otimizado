@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br
+">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Texto</title>
+    <style>
+        mark {
+            background-color: aquamarine;
+        }
+    </style> <!--E essa é a forma CSS de mudar todas as marcações de texto feitas com a tag "MARK"(<Mark></Mark>)"-->
+</head>
+<body>
+    <del>
+        <h1>As CSS que foram usadas em &lt;head&gt; &lt;/head&gt; entre as tags desse site</h1>
+    </del>
+        <p>
+            <pre>
+                <code>
+&lt;head&gt; 
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial - scale=1.0"&gt;
+&lt;title&gt;Formatação de Texto&lt;/title&gt;
+<mark>
+    &lt;style&gt;
+        mark {
+                background-color: aquamarine;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+</mark> 
+<mark style="background-color: blueviolet;">(A parte marcada está mostrando uma tag ou folha em CSS que usamos em "&lt;head&gt;" para manter as cores de todas as marcações em azul ciano como padrão - como descrito em "backgroud" - "aquamarine")</mark> 
+                </code>
+            </pre>
+        </p>
+    <p>Agora como eu deixei a cor da descrição do que aconteceu entre as tags na cor <mark style="background-color: blueviolet;">roxa</mark>?? - Veja o exemplo: <br>
+    <mark style="background-color: blanchedalmond;">&lt;mark style="background-color: blueviolet;"&gt;</mark>(A parte marcada está mostrando uma tag ou folha em CSS que usamos em "&lt;head&gt;" para manter as cores de todas as marcações em azul ciano como padrão - como descrito em "backgroud" - "aquamarine")<mark style="background-color: blanchedalmond;">&lt;/mark&gt;</mark>
+    </p>
+    <hr>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nessa frase temos um <b>termo em negrito</b> usando a tag B ("&lt;b&gt; &lt;/b&gt;" - não semântica).</p>
+    <p>Nesta frase, temos um <strong>termo em destaque</strong> usando a tag STRONG ("&lt;strong&gt; &lt;/strong&gt;" - semântica).</p>
+    <hr>
+    <p>Agora, por que os dois mesmo não tendo nenhuma mudança visual, torma um semântico e o outro não semântico? <br> A resposta está na conceituação de ambos. A tag B("&lt;b&gt; &lt;/b&gt;") ela é uma tag não semântica, ela só tem forma. (Como assim ela só tem forma sendo que as duas estão perfeitamente iguais?? Se lembra do significado de semântica? que é o que tem maior VALOR, tendo mais o SIGNIFICADO do que a forma... Pois então). A tag B("&lt;b&gt; &lt;/b&gt;") não é conceituada, ela é apenas uma forma de deixar em negrito! e por simplesmente não existir um conceito por trás da tag ela é vista como não semântica. <br> Já a tag STRONG ("&lt;strong&gt; &lt;/strong&gt;") por simplesmente ao contrário da tag B ter um significado que em português é "forte"("Strong"), é visto como uma tag semântica.</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I ("&lt;I&gt; &lt;/I&gt;"- não semântica)</p>
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM("&lt;em&gt; &lt;/em&gt;" - semântica)</p>
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também um <mark style="background-color: aqua;">texto marcado</mark> usando a tag MARK("&lt;mark&gt; &lt;/mark&gt;")</p> 
+    
+    <!--A mark style="background-color: QUALQUER COR SEI LÁ;" É uma das 
+    formas de mudar a cor da marcação individualmentet-->
+
+    <p>E no oitro parágrafo, temos <mark>outro texto marcado</mark> no final</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> ("&lt;big&gt; &lt;/big&gt;" - não semântica) e um <small>texto pequeno</small>("&lt;small&gt; &lt;/small&gt;" - semântica) nesse parágrafo.</p>
+    <p>Mas por que a tag "big" se tornou obsoleto(não semântico) e a "small" não?? <br> Por que ajustar a letra para maior da a entender forma pois isso é ajustado no css, já a tag "small" tem sua importância pela forma com é útilizada, por exemplo nos contratos "Leia as letras pequenas" e por isso ainda se consegue dar sentido para a tag "small"
+    </p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.("&lt;del&gt; &lt;/del&gt;" - semântica)</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar ênfase e indicar que ele foi adicionado depois.(¨&lt;ins&gt; &lt;/ins&gt;)</p>
+    <p>Existe também o <u>sublinhado</u> com a tag U ("&lt;u&gt; &lt;/u&gt;"não semântica)</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<mark><sup>20</sup></mark>+3</p> 
+    <p>(Exemplo do que foi feito em tags: "Para inserir coisas do tipo x<mark>&lt;sup&gt;20&lt;/sup&gt;</mark>+3")</p>
+    <p>("&lt;sup&gt; &lt;/sup&gt;")</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<mark><sub>2</sub></mark>O</p>
+    <p>(Exemplo do que foi feito em tags: "Para isnerir coisas do tipo H<mark>&lt;sub&gt;2&lt;/sub&gt;</mark>O")</p> ("&lt;sub&gt; &lt;/sub&gt;")</p>
+    
+</html>

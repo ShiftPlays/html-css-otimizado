@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferenetes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+<p>código utilizado para fazer essa adaptação de imagens</p>
+<p>
+    <pre>
+        <code>
+            &lt;picture&gt;
+                <mark style="background-color:cadetblue;">&lt;source media="(max-width: 750px)"</mark> srcset="imagens/fotos-p.png type="image/png"&gt;
+                &lt;source media="(max-width: 1050px)" srcset="iamgens/fotos-m.png type="image/png"&gt;
+                &lt;img src="Imagens/fotos-g" alt="Imagem flexível"&gt;
+            &lt;/pictire&gt;
+        </code>
+    </pre>
+</p>
+<p>Um detalhe muito importante a ressaltar é que as imagens de nossa pretenção a serem adaptadas, começarão na linha de tag apartir da menor para maior. Exemplificando, vemos nos códigos utilizados dentro da tag "picture" a <mark style="background-color:cadetblue">"source media="max-width: 750 px"</mark> ela representa a menor das imagens e ela começa em primeiro na linha de tag dentro de "picure" para que as outras(média e grande) deêm proceguimento. <br> Em outras palavras existe uma ordem entre os &lt;source&gt;, é necessário que os itens mais acima sejam os menores temanhos para "max-width" e que os seguintes sejam maiores, de forma crescente. O último item dentro de &lt;picture&gt; deve ser a imagem padrão.</p>
+<p>Note que a tag &lt;source&gt; possui três atributos</p>
+<ul>
+    <li><em>Type</em>: Vai indicar o media type(application/zip, text/html, video/mp4, image/png e etc... Lista de <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">Media Type</a>)
+    <li><em>srcset</em>:Vai configuraro nome da imagem que será carregada quando o tamanho indicado for atingido
+    <li><em>media</em>: Indica o tamanho máximo a ser considerado para carregar a imagem indicada no atributo <em>"srcset"</em>
+</ul>
+<h1>Reproduzindo Áudio</h1>
+<p>Vamos aprender a reproduzir áudios em HTML5.</p>
+<audio src="midia/Shift.mp3" controls autoplay></audio>
+<!-- MP3 WAV OGG-->
+ <p>Código uilizado para áudio</p>
+ <p>
+    <pre>
+        <code>
+            &lt;audio src="midia/Shift.mp3" controls autoplay&gt;&lt;/audio&gt;
+        </code>
+    </pre>
+ </p>
+<p>Outra forma de reproduzir áudios.</p>
+ <p> 
+<audio preload="none" autoplay controls loop>
+    <source src="midia/Shift.mp3" type="audio/mpeg">
+    <source src="midia/Shift.ogg" type="audio/ogg">
+    <source src="midia/Shift.wav" type="audio/wav">
+    <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Shift.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    <p><a href="midia/Shift.wav">Download arquivo WAV</a><br><a href="midia/Shift.ogg">Download arquivo OGG</a></p>
+ </audio>
+ <p>Código da segunda forma de reproduzir áudio.</p>
+ <p>
+    <pre>
+        <code>
+            &lt;audio <mark style="background-color: burlywood;">preload</mark>="auto" <mark style="background-color: cornflowerblue;">autoplay</mark> <mark style="background-color: blueviolet;">controls</mark> <mark style="background-color: darkseagreen;">loop</mark>&gt;
+                &lt;source src="midia/Shift.mp3" type="audio/mpeg"&gt;
+                &lt;source scr="midia/shift.ogg" type=audio/ogg"&gt;
+                &lt;source scr="midia/shift.wav" type=audio/wav"&gt;
+            &lt;p&gt;Infelizmente seu navegador não consegue reproduzir áudio.&lt;a href="midia/shift.mp3"&gt;Download arquivo MP3&lt;/a&gt;&lt;/p&gt;
+        </code>
+    </pre>
+ </p>
+</p>
+<p>A tag "audio" (&lt;audio&gt;&lt;/audio&gt;) existem parâmetros que auxiliam até mesmo na visibilidade dele no site, sendo eles: <mark style="background-color: burlywood;">"preload"</mark> <mark style="background-color:cornflowerblue">"autoplay"</mark> <mark style="background-color: blueviolet;">"controls"</mark> 
+<mark style="background-color:darkseagreen">"loop"</mark>.</p>
+<ul>
+    <li><mark style="background-color:burlywood;">preload</mark>: Indica se o áudio será pré-carregado ou não e aceita 3 valores:<br>"auto" - Ele é o padrão quando se usa a tag sem parâmetro, porém não é muito indicado pois ele dispõe todo o peso do arquivo no site e em contextos onde o arquivo for muito grande, não é indicado que usemos essa opção.<br>"metadata" - Só dará algumas informações a mais do arquivo como o tempo do áudio entre outros. <br>"none" - não vai carregar completamente nada, apenas carregará quando clicar no botão de reproduzir áudio</li>
+    <li><mark style="background-color:cornflowerblue;">autoplay</mark>: Permite que o áudio comece a tomar automaticamente.</li>
+    <li><mark style="background-color: blueviolet;">controls</mark>:Para habilitar o botão de play no áudio.</li>
+    <li><mark style="background-color: darkseagreen;">loop</mark>: Faz a trilha sonora recomeçar assim que acabar.</li>
+</ul>
+<p>Essas informações estão no PDF 11.</p>
+<h1></h1>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://www.youtube.com/@ShiftPlaysGames">canal no Youtube</a></p>
+    <p>Você pode baixar <a href="https://www.mediafire.com/file/2pixio7v5vf3stq/The_Sims_2_Ultimate_Collection.zip/file?fbclid=IwY2xjawILTXhleHRuA2FlbQIxMAABHWym8T9zJT9SQfDwWS47AOiXy2xqloC1NRlGGLSvSe_zur6yx8RiKSiDdQ_aem_8f7jAYJt09Evmr9_M0XoEA" target="_blank" rel="external">The Sims 2</a></p>
+    <p>Exemplo de como foi feito:</p>
+    <p>
+        <pre>
+            <code>
+&lt;p&gt;Você pode acessar meu&lt;a href="https://www.youtube.com/@ShiftPlaysGames"&gt;canal no Youtube&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Você pode baixar &lt;a href="https://www.mediafire.com/file/2pixio7v5vf3stq/The_Sims_2_Ultimate_Collection.zip/file?fbclid=IwY2xjawILTXhleHRuA2FlbQIxMAABHWym8T9zJT9SQfDwWS47AOiXy2xqloC1NRlGGLSvSe_zur6yx8RiKSiDdQ_aem_8f7jAYJt09Evmr9_M0XoEA" target="_blank" rel="external"&gt;The Sims 2&lt;/a&gt;&lt;/p&gt;
+            </code>
+        </pre>
+    </p>
+<p>O mesmo exemplo de um jeito simplificado:</p>
+<p>
+    <pre>
+        <code>
+&lt;p&gt;Você pode acessar meu&lt;a href="<a href="https://www.youtube.com/@ShiftPlaysGames">O link do canal no Youtube</a>"&gt;Canal no Youtube&lt;/p&gt;
+&lt;p&gt;Você pode baixar&lt;a href="<a href="https://www.mediafire.com/file/2pixio7v5vf3stq/The_Sims_2_Ultimate_Collection.zip/file?fbclid=IwY2xjawILTXhleHRuA2FlbQIxMAABHWym8T9zJT9SQfDwWS47AOiXy2xqloC1NRlGGLSvSe_zur6yx8RiKSiDdQ_aem_8f7jAYJt09Evmr9_M0XoEA" target="_blank" rel="external">Link do site para download</a>" target="_blank" rel="external"&gt;The Sims 2&lt;/a&gt;&lt;/p&gt;
+        </code>
+    </pre>
+</p>
+<p>Percebe-se que ao clicar no link escrito "canal no Youtube" o site é redirecionado para o Youtube sem deixar pistas do nosso site, isso acontece porque não acrescentamos na nossa tag "&lt;a href=""&gt;" o complemento "&lt;a href="O Link" target="_blank" rel="external"&gt;" que possíbilita qua se abra apenas uma outra guia mantendo nosso site aberto para uso. 
+
+<p>O nome desses links que disponibilizamos no nosso site se chama "hyperlinks" e para criar "hyperlinks" devemos criar âncoras através da tag &lt;<mark>a</mark>&gt;("Anchor" - em português "âncora"). O atributo dessa tag é o "href"(&lt;a <mark>href=""</mark>&gt; - "hypertext reference" em português "referência hipertexto")</p> </p>
+<h2>Praticando</h2>
+<p>Meu <a href="https://www.facebook.com/profile.php?id=61552144662065" target="_blank" rel="external">Facebook</a></p>
+<hr>
+<p>Meu vídeo <a href="https://www.youtube.com/watch?v=Gpa6tgQSRlk" hreflang="pr-br" target="_blank" rel="external">ShiftPlays treinando para matar satanás</a></p>
+
+<mark style="background-color: burlywood;">&lt;a href="Link" <mark>hreflang="pt-br"</mark> target="_blank" rel="external"&gt;</mark>
+<hr>
+<p>Meu <a href="file:///G:/Fernando%20Antônio/ShiftPlays%20Games/Site%20ShiftPlays/Site%20Oficial%20ShiftPlays%20que%20matou%20satanás%20KKKKKKKKKKKKK/index.html" target="_self">Site</a></p>
+<p>&lt;a href="link" target="_self"&gt;</p>
+<p>
+    <pre>
+        <code>
+&lt;<mark>a href</mark>="file:///G:/Fernando%20Antônio/ShiftPlays%20Games/Site%20ShiftPlays/Site%20Oficial%20ShiftPlays%20que%20matou%20satanás%20KKKKKKKKKKKKK/index.html" target="_self"&gt;
+        </code>
+    </pre>
+</p>
+<hr>
+<h2>Target</h2>
+<p>Para poder controlar onde o site de destino vai abrir, podemos usar o atributo <mark>target</mark> pertencente a tag "a"(&lt;a href="" <mark>target=""</mark>&gt;) que suporta os seguintes <mark style="background-color: pink;">valores</mark></p>
+<p>
+    <ol type="a">
+        <li><strong><mark style="background-color: pink;">_blank</mark></strong>:Vai abrir o link em uma nova janela em branco</li>
+        <li><strong><mark style="background-color: pink;">_self</mark></strong>:vai abrir o link na janela ou frame atual(padrão)</li>
+        <li><strong><mark style="background-color: pink;">_top</mark></strong>: vai desfazer todos os frames e abrir o destino no navegador completo(Cancela todos os frames e abre a nova página no mesmo navegador 
+        framename: Abre a página em um frame nomeado e especificado)</li>
+        <li><strong><mark style="background-color: pink;">_parent</mark></strong>:abre a página destino na página anterior do histórico de navegação(Abre a página na mesma janela do link )</li>
+    </ol>
+</p>
+<p>Segundo Gustavo Guanabara, nosso professor, o uso de frames é uma técnica quase em desuso, vamos apenas nos basear nas "_blank" e "_self"</p>
+<h3>_self</h3>
+<p><a href="https://www.youtube.com/@ShiftPlaysGames" target="_self">Shift</a></p>
+<p>
+    <pre>
+        <code>
+&lt;p&gt;&lt;a href="https://www.youtube.com/@ShiftPlaysGames" <mark style="background-color: blueviolet;">target="_self"</mark>&gt;<mark>Shift</mark>&lt;/a&gt;&lt;/p&gt;
+        </code>
+    </pre>
+</p>
+<h3>_blank</h3>
+<p><a href="https://www.youtube.com/@ShiftPlaysGames" target="_blank">Shift</a></p>
+<p>
+    <pre>
+        <code>
+&lt;p&gt;&lt;a href="https://www.youtube.com/@ShiftPlaysGames" <mark style="background-color: blueviolet;">target="_blank"</mark>&gt;<mark>Shift</mark>&lt;/a&gt;&lt;/p&gt;
+        </code>
+    </pre>
+</p>
+<h3>_top</h3>
+<p><a href="https://www.youtube.com/watch?v=LBL4RmZjRjk&t=14s" target="_top">Quake Classic Multiplayer</a></p>
+<p>
+    <pre>
+        <code>
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=LBL4RmZjRjk&t=14s" <mark style="background-color: blueviolet;">terget="_top"</mark>&gt;<mark>Quake Classic Multiplayer</mark>&lt;/a&gt;&lt;/p&gt;
+        </code>
+    </pre>
+</p>
+<h3>_parent</h3>
+<p><a href="https://www.youtube.com/watch?v=Yeh2fPFZA0E&t=16s" target="_parent">Gta Sa Multiplayer Rumble Server</a></p>
+<p>
+    <pre>
+        <code>
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=Yeh2fPFZA0E&t=16s" <mark style="background-color: blueviolet;">target="_parent"</mark>&gt;<mark>Gta Sa Multiplayer Rumble Server</mark>&lt;/a&gt;&lt;/p&gt;
+        </code>
+    </pre>
+</p>
+<h2>rel</h2>
+<p>O atributo "rel" pertencente a tag "a"(&lt;a href="" target="" <mark>rel=""</mark>&gt;)indica qual é a natureza do destino, esse atributo aceita vários <mark style="background-color: chocolate;">valores</mark>, entre eles:</p>
+<p>
+    <ol type="a">
+        <li><mark style="background-color: chocolate;">next</mark>:indica que o link é para a próxima parte do documento atual</li>
+        <li><mark style="background-color: chocolate;">prev</mark>:indica que o link é para a parte anterior do documento atual("Preveous" - "anterior")</li>
+        <li><mark style="background-color: chocolate;">author</mark>:indica que é um link para o site do autor do artigo atual</li>
+        <li><mark style="background-color: chocolate;">external</mark>:indica que é um link para outro site que não faz parte do site atual</li>
+        <li><mark style="background-color: chocolate;">nofollow</mark>:indica que é um link para um site não endossado(endossado - que contém a declaração de transferência de posse. No caso não endossado significa que ele não é confiável ou que você não da a repercurssão através do seu site), como um link pago</li>
+    </ol>
+</p>
+<h2>Links Internos</h2>
+<p>Este é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pagina2.html" target="_self" rel="next">segunda página(canal)</a> a <a href="pagina3.html" target="_self" rel="next">terceira(loja)</a> e a <a href="Downloads/pagina4.html" target="_self" rel="next">quarta(downloads)</a> página</p>
+</body>
+</html>

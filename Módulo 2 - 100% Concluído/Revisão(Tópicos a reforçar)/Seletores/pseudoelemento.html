@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pseudo-elemento</title>
+</head>
+<body>
+    <p><a href="seletorespseudoclass.html" target="_self" rel="prev">Voltar</a> para as pseudo-classes</p>
+    <h1>Pseudo-elemento(Pseudo-element)</h1>
+    <p>
+        <pre>
+            <code>
+               (css) :: = pseudo-element (html)
+            </code>
+        </pre>
+    </p>
+<hr>
+<h2>Exemplos</h2>
+<p id="pseudoelement">Lorem ipsum dolor sit amet consectetur adipisicing elit. A accusamus exercitationem sunt eaque modi consequatur nam facere possimus praesentium nemo ipsam odit ea, minima cum hic, at rerum excepturi neque?</p>
+<p id="pse">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque reprehenderit omnis fugit, placeat nam laboriosam blanditiis! Id quo, enim magnam blanditiis, illum praesentium molestias culpa explicabo deserunt obcaecati sed ut?</p>
+<p id="ps">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid molestiae at ipsum, pariatur, fuga voluptas natus expedita, recusandae rerum voluptatem hic sed vel? Sed sequi hic laudantium quae molestias aliquam?</p>
+<p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem at ducimus similique tenetur recusandae molestiae eos impedit error iusto officiis numquam quisquam repudiandae necessitatibus aut nam, dolore sed corrupti eaque!</p>
+
+<h3>html</h3>
+
+<p>
+    <pre>
+        <code>
+&lt;p id="pseudoelement"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. A accusamus exercitationem sunt eaque modi consequatur nam facere possimus praesentium nemo ipsam odit ea, minima cum hic, at rerum excepturi neque?&lt;/p&gt;
+&lt;p id="pse"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque reprehenderit omnis fugit, placeat nam laboriosam blanditiis! Id quo, enim magnam blanditiis, illum praesentium molestias culpa explicabo deserunt obcaecati sed ut?&lt;/p&gt;
+&lt;p id="ps"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid molestiae at ipsum, pariatur, fuga voluptas natus expedita, recusandae rerum voluptatem hic sed vel? Sed sequi hic laudantium quae molestias aliquam?&lt;/p&gt;
+&lt;p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem at ducimus similique tenetur recusandae molestiae eos impedit error iusto officiis numquam quisquam repudiandae necessitatibus aut nam, dolore sed corrupti eaque!&lt;/p&gt;
+        </code>
+    </pre>
+</p>
+<h3>css</h3>
+
+<p>
+    <pre>
+        <code>
+            p#pseudoelement<mark style="background-color:teal;">::before</mark> {
+
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            
+            p#pse<mark style="background-color:teal;">::after</mark> {
+            
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            
+            p#ps<mark style="background-color:teal;">::first-letter</mark> {
+            
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            
+            p#p<mark style="background-color:teal;">::first-line</mark> {
+            
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        </code>
+    </pre>
+</p>
+
+<p>Para a conceituação de cada tópico, está tudo na primeira página</p>
+<hr>
+
+<p class="next"><a href="children.html" target="_self" rel="next">Clique aqui</a> para saber a respeito do seletor children(criança/filho)</p>
+</html>

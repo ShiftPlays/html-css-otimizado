@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <h3>Lista Ordenada númericas</h3>
+    <p>
+        <ol>
+            <li>Acordar
+            <li>Escovar os dentes 
+            <li>Tomar banho
+            <li>Se arrumar para o trabalho
+            <li>Ir ao trabalho
+            <li>Voltar para casa
+            <li>Banhar</li>
+            <li>Jantar</li>
+            <li>Escovar os dentes</li>
+            <li>Descansar 30 minutos</li>
+            <li>Estudar por 2 horas</li>
+            <li>Dormir</li>
+                
+                
+                
+                <!--A tag de fechamento </li> não é obrigatória desde os HTML5-->
+        </ol>
+    </p>
+    <p>Para fazermos essas listas ordenadas, apenas precisamos usar as tags "<mark>&lt;ol&gt; &lt;/ol&gt;</mark>" e dentro da tag "ol"(<mark style="background-color: olive;">Ordered List</mark>) colocamos a tag "<mark>&lt;li&gt; &lt;/li&gt;</mark>"(<mark style="background-color: olive;">List Item</mark> - <mark>Obs: A tag de fechamento &lt;/li&gt; não é obrigatíria no HTML5</mark>) para fazer essas listas ordenadas.
+    </p>
+    <h3>Lista Ordenada com início em outros números</h3>
+    <p>
+        <ol type="1" start="6">
+            <li>Acordar
+            <li>Escovar os dentes 
+            <li>Tomar banho
+            <li>Se arrumar para o trabalho
+            <li>Ir ao trabalho
+            <li>Voltar para casa
+            <li>Banhar</li>
+            <li>Jantar</li>
+            <li>Escovar os dentes</li>
+            <li>Descansar 30 minutos</li>
+            <li>Estudar por 2 horas</li>
+            <li>Dormir</li>
+        </ol>
+    </p>
+    <p>Agora para fazer a lista ordenada iniciar na sua lista númerica, outro número sem que começe pelo número de início "1", dentro da tag "ol" colocaremos o parâmetro - type="1"(Que indica o tipo de Lista Ordenada) e em seguida o - "start="6"(Ou qualquer outro número para iniciar na lista ordenada) no caso na linha de tag ficaria assim: "<mark>&lt;ol type="1" start="6"&gt; &lt;/ol&gt;</mark>(Essa linha de parâmetro também funcionam nos algorismos romanos)"</p> 
+    <h3>Lista Ordenada tipo "A"</h3>
+    <p>
+        <ol type="A">
+            <li>Acordar
+            <li>Escovar os dentes 
+            <li>Tomar banho
+            <li>Se arrumar para o trabalho
+            <li>Ir ao trabalho
+            <li>Voltar para casa
+            <li>Banhar</li>
+            <li>Jantar</li>
+            <li>Escovar os dentes</li>
+            <li>Descansar 30 minutos</li>
+            <li>Estudar por 2 horas</li>
+            <li>Dormir</li>
+        </ol>
+    </p>
+    <p>A explicação por trás das tags de nessa lista ordenada é simplesmente <mark>&lt;ol type="A"&gt; &lt;/ol&gt;</mark></p>
+    <h3>Lista Ordenada tipo "a"</h3>
+    <p>
+        <ol type="a">
+            <li>Acordar
+            <li>Escovar os dentes 
+            <li>Tomar banho
+            <li>Se arrumar para o trabalho
+            <li>Ir ao trabalho
+            <li>Voltar para casa
+            <li>Banhar</li>
+            <li>Jantar</li>
+            <li>Escovar os dentes</li>
+            <li>Descansar 30 minutos</li>
+            <li>Estudar por 2 horas</li>
+            <li>Dormir</li>
+        </ol>
+    </p>
+    <p>Tá na mão: "<mark>&lt;ol type="a"&gt; &lt;/ol&gt;</mark>"</p>
+<hr>
+    <p>Caso eu queira começar pelo "f"</p>
+    <p>
+        <ol type="a" start="6">
+            <li>Acordar
+            <li>Escovar os dentes 
+            <li>Tomar banho
+            <li>Se arrumar para o trabalho
+            <li>Ir ao trabalho
+            <li>Voltar para casa
+            <li>Banhar</li>
+            <li>Jantar</li>
+            <li>Escovar os dentes</li>
+            <li>Descansar 30 minutos</li>
+            <li>Estudar por 2 horas</li>
+            <li>Dormir</li>
+        </ol>
+    <p>"<mark>&lt;ol type="a" start="6"&gt;</mark> &lt;/ol&gt;"</p>
+    </p>
+    <h3>Lista Ordenada tipo "I"(Algarismos Romanos)</h3>
+        <p>
+            <ol type="I">
+                <li>Acordar
+                <li>Escovar os dentes 
+                <li>Tomar banho
+                <li>Se arrumar para o trabalho
+                <li>Ir ao trabalho
+                <li>Voltar para casa
+                <li>Banhar</li>
+                <li>Jantar</li>
+                <li>Escovar os dentes</li>
+                <li>Descansar 30 minutos</li>
+                <li>Estudar por 2 horas</li>
+                <li>Dormir</li>
+            </ol>
+        </p>
+        <p><mark>"&lt;ol type="I"&gt;</mark> &lt;/ol&gt;" <br> Você também pode decidir a partir de qual número pretende começar usando o parâmetro: "<mark>&lt;ol type="I" start="5"&gt;</mark> &lt;/ol&gt;"</p>
+        <hr>
+        <p>
+            <ol type="I" start="6" >
+                <li>Acordar
+                <li>Escovar os dentes 
+                <li>Tomar banho
+                <li>Se arrumar para o trabalho
+                <li>Ir ao trabalho
+                <li>Voltar para casa
+                <li>Banhar</li>
+                <li>Jantar</li>
+                <li>Escovar os dentes</li>
+                <li>Descansar 30 minutos</li>
+                <li>Estudar por 2 horas</li>
+                <li>Dormir</li>
+            </ol>
+        </p>
+        <p><mark>&lt;ol type="I" start="6"&gt;</mark></p>
+    <h3>Lista Ordenada tipo "i"(Algarismos Romanos em minúsculos)</h3>
+    <p>
+        <ol type="i"> <!-- Em questão de  de opções de types, temos "1" "A" "a" "I" "i" --> 
+            <li>Acordar
+            <li>Escovar os dentes 
+            <li>Tomar banho
+            <li>Se arrumar para o trabalho
+            <li>Ir ao trabalho
+            <li>Voltar para casa
+            <li>Banhar</li>
+            <li>Jantar</li>
+            <li>Escovar os dentes</li>
+            <li>Descansar 30 minutos</li>
+            <li>Estudar por 2 horas</li>
+            <li>Dormir</li>
+        </ol> 
+    </p>
+    <p>"<mark>&lt;ol type="i"&gt;</mark>"</p>
+    <h2>Lista não Ordenadas</h2>
+    <h3>Lista não Ordenada (type "disc" - que é o padrão)</h3>
+        <ul>
+            <li>Arroz
+            <li>Feijão
+            <li>carne
+            <li>açucar
+            <li>Macarrão</li>
+            <li>Leite</li>
+            <li>Ceral</li>
+            <li>Toddy</li>
+        </ul>
+        <p>Para fazermos a lista não ordenada precisaremos usar a tag "ul"("&lt;ul&gt;&lt;/ul&gt; - Unordered Lists") e dentro dela ou delimitado a ela a tag "li"(&lt;li&gt;&lt;/li&gt; - List Item - Obs: A tag de fechamento &lt;/li&gt; não é obrigatíria no HTML5)</p>
+    <h3>Lista não Ordenada (type "square")</h3>
+        <ul type="square">
+            <li>Arroz
+            <li>Feijão
+            <li>carne
+            <li>açucar
+            <li>Macarrão</li>
+            <li>Leite</li>
+            <li>Ceral</li>
+            <li>Toddy</li>
+        </ul>
+        <p>&lt;ul type="square"&gt; &lt;/ul&gt;</p>
+    <h3>Lista não Ordenada (type "circle")</h3>
+        <ul type="circle"> <!-- As opcões de types nas listas não ordenadas são "disc", "circle" e "square"-->
+            <li>Arroz
+            <li>Feijão
+            <li>carne
+            <li>açucar
+            <li>Macarrão</li>
+            <li>Leite</li>
+            <li>Ceral</li>
+            <li>Toddy</li>
+        </ul>
+        <p>&lt;ul type="circle"&gt; &lt;/ul&gt;</p>
+        <hr>
+        <h2>Como são feitos as listas ordenadas e não ordenadas na linha de tags</h2>
+        <h3>Listas ordenadas</h3>
+        <p>
+            <pre>
+                <code>
+            &lt;p&gt;
+                &lt;ol&gt;
+                    &lt;li&gt;Pão&lt;/li&gt;(A barra de fechamento na tag "li" é opcional.)
+                    &lt;li&gt;buceta&lt;/li&gt;
+                    &lt;li&gt;homossexuais bundudos&lt;/li&gt;
+                    &lt;li&gt; ROW IS NANA, SQUISK BANANAAAA
+                &lt;/ol&gt;
+            &lt;/p&gt;
+<hr>
+<p>Exemplo Lista Ordenada tipo "a"</p>
+            &lt;p&gt;
+                &lt;ol type="a"&gt;
+                    &lt;li&gt;cu&lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/p&gt;
+                </code>
+            </pre>
+        </p>
+        <h3>Lista não ordenadas</h3>
+        <p>
+            <pre>
+                <code>
+            &lt;p&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;Arroz gay
+                &lt;/ul&gt;
+            &lt;/p&gt;
+                </code>
+            </pre>
+        </p>
+<hr>
+<p>Exemplo de Lista não ordenada (type "cyrcle")</p>
+        <p>
+            <pre>
+                <code>
+            &lt;p&gt;
+                &lt;ul type="circle"&gt;
+                    &lt;li&gt;pau e água
+                &lt;/ul&gt;
+            &lt;/p&gt;
+                </code>
+            </pre>
+        </p>
+<h2>Lista dos meus jogos favoritos</h2>
+<p>
+    <ul>
+        <li>PlayStation 2</li>
+        <ol>
+            <li>Grand Theft Auto</li>
+            <ul type="square">
+                <li>Gta San Andreas</li>
+                <li>Gta Vice City</li>
+                <li>Gta III</li>
+                <li>Gta Liberti City Store</li>
+            </ul>
+            <li>God of War</li>
+            <ul type="square">
+                <li>God of War</li>
+                <li>God of War II</li>
+            </ul>
+        </ol>
+        <li>Super Nintendo</li>
+        <ol>
+            <li>Mario</li>
+            <ul>
+                <li>Super Mario World</li>
+                <li>Super Mario Bros</li>
+            </ul>
+            <li>Wolfenstein 3D</li>
+            <li>Sunsent Riders</li>
+            <li>Wild Guns</li>
+            <li>Top Guear</li>
+            <ul>
+                <li>Top Guear</li>
+                <li>Top Guear 2</li>
+            </ul>
+        </ol>
+    </ul>
+</p>
+<h2>Lista de Definições</h2>
+<dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação para criação do conteúdo de um site.</dd>
+    <dt>CSS</dt>
+    <dd>Linguagem de marcação para criação de design de um site.</dd>
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programação para a criação de interatividade de um site</dd>
+</dl>
+<hr>
+<p>Todas as listas de definições estão dentro da tag "&lt;dl&gt; &lt;/dl&gt;"(Definition List) Cada termo é um "&lt;dt&gt;"(definition term - fechamento opcional) e cada descrição é um "&lt;dd&gt;"(definition descripion - fechamento opcional)</p>
+<p>Exemplo:
+    <pre>
+        <code>
+        &lt;dl&gt;
+            &lt;dt&gt;HTML&lt;/dt&gt;
+            &lt;dd&gt;Linguagem de marcação para criação do conteúdo de um site&lt;/dd&gt;
+            &lt;dt&gt;CSS&lt;/dt&gt;
+            &lt;dd&gt;Linguagem de marcação para criação de design de um site.&lt;/dd&gt;
+            &lt;dt&gt;JavaScript&lt;/dt&gt;
+            &lt;dd&gt;Linguagem de programação para a criação de interatividade de um site&lt;/dd&gt;
+        &lt;/dl&gt;
+        </code>
+    </pre>
+</p>
+</body>
+</html>

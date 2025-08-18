@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tamanho de fontes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /* Medidas Absolutas.
+            "cm" (centimentro), "mm"(milimetro), "in"(polegada), "px"(pixel), "pt"(ponto) e "pc"(paica)
+            
+            Medidas Relativas.
+            "em" (altura "M" é relativo ao "M" maiúsculo de uma letra de uma determinada fonte).
+            
+            "ex" (Relativa ao tamanho "x" de um fonte). 
+            
+            "rem" (tipo media "em" porém relativa ao "root" - que é a fonte configurada na tag "<body></body>"). 
+            
+            "vw" (view width - que siginifica a largura da viewport - "viewport" é o tamanho da tela de dispositivos, seja celular, monitor, notebook ou tv, todas tem sua "viewport" específica. - ou seja a "vw" é a porcentagem da largura de uma viewport.).
+
+            "vh" (viewport height - que siginifica a altura da viewport.).
+            
+            "%" (porcentagem).
+
+            E existem outras várias medidas relativas. porém usaremos apenas as que são indicadas pela "w3c" que são as "px"(das medidas absolutas)e as "em"(Das medidas relativas) apenas.
+            
+            16px = 1em (geralmente)
+            */
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tamanho de fontes</h1>
+    <h2>Conceitos do seletor "Font-size" CSS e suas declarações.</h2>
+    <p>Basicamente a "font-size"(traduzido para o português "tamanho-da-fonte") é uma propriedade do CSS que define o tamanho da fonte. <br> E nelas existem as medidas absolutas e as medidas relativas.</p>
+    <p>
+        <pre>
+            <code> 
+                &lt;style&gt;
+                    body{
+                        font-size: 1em;
+                    }
+                &lt;/style&gt;
+            </code>
+        </pre>
+    </p>
+    <p>Medidas Absolutas.
+     <ul>
+        <li>"cm" (centimentro)</li>
+        <li>"mm" (milimetro)</li>
+        <li>"in" (polegada)</li>
+        <li>"px" (pixel)</li>
+        <li>"pt" (ponto)</li>
+        <li>"pc" (paica)</li>
+     </ul>
+    </p>
+    <p>Medidas Relativas.
+        <ul>
+            <li>"em" (é relativo ao tamanho da letra maiúscula "M" de uma determinada fonte).</li>
+            <li>"ex" (Relativa ao tamanho "x" ou <mark style="background-color:blueviolet;">altura "x"</mark> de um fonte) - na página anterior existe uma imagem explicando na anatomia do tipo.</li> 
+            <li>"rem" (tipo media "em" porém relativa ao "root" - que é a fonte configurada na tag "&lt;body&gt;&lt;/body&gt;").</li> 
+            <li>"vw" (view width - que siginifica a largura da viewport - "viewport" é o tamanho da tela de dispositivos, seja celular, monitor, notebook ou tv, todas tem sua "viewport" específica. - ou seja a "vw" é a porcentagem da largura de uma viewport.).</li>
+            <li>"vh" (viewport height - que siginifica a altura da viewport.).</li>
+            <li>"%" (porcentagem).</li>
+        </ul>
+    </p>
+    <p>E existem outras várias medidas relativas, porém usaremos apenas as que são indicadas pela "<a href="https://www.w3.org/" target="_blank" rel="external">w3c</a>" que são as "<mark>px</mark>" - "<mark>pixel</mark>"(das medidas absolutas)e as "<mark>em</mark>" (Das medidas relativas) apenas.</p>
+    <p>16px = 1em (geralmente)</p>
+    <hr>
+    <p><a href="fonte01.html" target="_self" rel="prev">Voltar</a> para página um sobre tipografia e os conceitos e parâmetros da "font-family"</p>
+    <p>página falando sobre peso, estilo e shorthand <a href="fonte03.html" target="_self" rek="next">Próxima</a></p>
+</body>
+</html>

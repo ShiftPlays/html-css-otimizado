@@ -1,0 +1,146 @@
+01 - História da Internet.pdf
+1.A
+2.B
+3.D
+4.B
+5.A
+6.B
+7.B
+8.C
+9.A
+10.D
+
+02 - Como funciona a Internet.pdf
+1.A
+2.C
+3.D
+4.B e C
+5.C
+6.A
+7.C
+8.D
+9.B
+10.C
+
+03 - Como funciona HTML e CSS.pdf
+1.C
+2.B
+3.A
+4.D
+5.B
+6.B
+7.A
+8.C
+9.D
+10.B
+
+04 - Primeiros passos HTML.pdf
+1.D
+2.A
+3.C
+4.D
+5.A
+6.C
+7.A
+8.D
+9.A
+10.C
+
+05 - Caracteres, parágrafos e quebras de linha.pdf
+1.A
+2.B
+3.C
+4.C
+5.A
+6.A
+7.C
+8.D
+9.B
+10.A
+
+06 - Imagens e Favicon.pdf
+1.B
+2.C
+3.D
+4.A
+5.D
+6.A
+7.C
+8.D
+9.A
+10.C
+
+07 - Hierarquia de títulos.pdf
+1.C
+2.D
+3.A
+4.A
+5.D
+6.B
+7.A
+8.A
+9.C
+10.C
+
+08 - Formatação de Textos.pdf
+1.B
+2.D
+3.C
+4.C
+5.A
+6.D
+7.B
+8.D
+9.B
+10.A
+
+09 - Listas HTML.pdf
+1.C
+2.C
+3.A
+4.B e D
+5.C
+6.D
+7.B
+8.C
+9.A
+10.B
+
+10 - Ligações em toda parte.pdf
+
+1.A
+2.D
+3.C
+4.D
+5.C
+6.D
+7.A
+8.B
+9.C
+10.B
+
+11 - Imagens dinâmicas, áudios e vídeos.pdf
+
+1.B 
+2.B
+3.A
+4.A
+5.D
+6.C
+7.B
+8.A
+9.C
+10.B
+
+12 - Trabalhando com estilos.pdf
+
+1.C
+2.A
+3.B
+4.D
+5.B
+6.A
+7.C
+8.C
+9.B
+10.C

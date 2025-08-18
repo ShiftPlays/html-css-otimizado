@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Peso, Estilo e Shorthand</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            font-weight: normal;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Peso, Estilo e Shorthand</h1>
+    <hr>
+    <h2>Peso</h2>
+    <h3>Seletor "font-weight" e suas declarações.</h3>
+    <p>
+        <pre>
+            <code>
+                &lt;style&gt;
+                    body{
+                        font-weigt: bold;
+                    }
+                &lt;/style&gt;
+            </code>
+        </pre>
+    </p>
+    <p>O parâmetro "font-weight" da tag &lt;style&gt; que se encontra dentro da tag &lt;body&gt; no português significa "peso-da-fonte" ("font-weight") e nelas existem alguns valores, sendo eles:</p>
+        <ul>
+            <li>lighter</li>
+            <li>normal</li>
+            <li>bold</li>
+            <li>bolder</li>
+        </ul>
+    <p>Esses variações de peso são reconhecidos como <mark>pesos literais</mark>.</p>
+    <p>Outra variação que podemos ter é a variação numerica, podendo iniciar do número "100" até o "900".<br> Um Exemplo:</p>
+    <p>
+        <pre>
+            <code>
+                &lt;style&gt;
+                    body{
+                        font-weigt: 100 <mark>a</mark> 900; 
+                    }
+                &lt;/style&gt;
+            </code>
+        </pre>
+    </p>
+    <p><mark style="background-color: violet;">Observação.</mark> <br> 
+        <mark style="background-color:violet;">Nem todas as fontes tem essa diversidade com variações numericas, ou seja, antes que querer usar essa opção, pesquisar uma fonte que tenha essa possibilidade.</mark></p>
+    <p>Essa variação numerica gera uma nuance(diferença sutil conforme a mudança numerica) assim como as famílias tipográficas, e com isso conseguimos mudar sutilmente tanto para mais quanto para menos a grossura da nossa fonte, dando ou um tom mais negrito ou menos negrito.</p>
+    <hr>
+    <h2>Estilo</h2>
+    <h3>Parâmetro "font-style" e seus valores</h3>
+    <p>Para complementar com o estilo de seja qual for a parte da escrita do nosso site que queira nós modificar, usaremos o parâmetro "font-style" em português "estilo-da-fonte".
+        <p>
+            <pre>
+                <code>
+                    &lt;style&gt;
+                        body{
+                            font-style: <mark style="background-color:blueviolet;">italic</mark>;
+                        }
+                    &lt;/style&gt;
+                </code>
+            </pre>
+        </p>
+    </p>
+    <p>Basicamente o parâmetro "font-style" é a que da a função para se usar o estilo itálico. Como o nome de seu <mark style="background-color:blueviolet;">valor</mark>: itálic</p>
+    <h3>Parâmetro "text-decoration" e seus valores</h3>
+    <p>Text-decoration em português "decoração-de-texto" e esse é o parâmetro usado para a função "sublinhado" como no exemplo a baixo:</p>
+    <p>
+        <pre>
+            <code>
+                &lt;style&gt;
+                    body{
+                        text-decoration: underline; 
+                    }
+                &lt;/style&gt;
+            </code>
+        </pre>
+    </p>
+    <p>Exemplo:</p>
+    <p style="text-decoration: underline;"> <mark>PAU</mark></p>
+    <hr>
+    <h2>Shorthand - font</h2>
+    <p>Shorthand em seu significado contextualizado, significa "mãozinha", mas vamos logo direto ao ponto putas, basicamente shorthand é uma expressão usada para representar a condenção de todos esses parâmetros:</p>
+    <p>
+        <pre>
+            <code>
+                &lt;style&gt;
+                    h1{
+                        font-style: <mark style="background-color:aqua;">italic</mark>;
+                        font-weight: <mark style="background-color:burlywood">bolder</mark>;
+                        font-size: <mark style="background-color:yellowgreen">3em</mark>;
+                        font-family: <mark style="background-color:teal">work Sans</mark>, <mark style="background-color:teal">sans-serif</mark>;
+                    }
+                &lt;/style&gt;
+            </code>
+        </pre>
+    </p>
+    <p>para</p>
+    <p>
+        <pre>
+            <code>
+                &lt;style&gt;
+                    font: <mark style="background-color:aqua;">italic</mark> <mark style="background-color:burlywood">bolder</mark> <mark style="background-color:yellowgreen">3em</mark> '<mark style="background-color:teal">Work Sans</mark>', <mark style="background-color:teal">sans-serif</mark>;
+                &lt;/style&gt;
+            </code>
+        </pre>
+    </p>
+    <p>Esse parâmetro simplicado, exercendo a mesma função do primeiro exemplo, porém na ordem OBRIGATÓRIA de &gt;<mark style="background-color:aqua;">font-style</mark> &gt; <mark style="background-color:burlywood">font-weight</mark> &gt;<mark style="background-color:yellowgreen">font-size</mark> &gt;<mark style="background-color:teal">font-family</mark> conseguindo dizer várias coisas em uma única linha.</p>
+    <p>Se quiser tirar um e deixar apenas 3 ou até mesmo dois, pode tirar tranquilo, porém seguindo essa mesma ordem.</p>
+    <p>Não existe shorthand pra tudo mas existem para vários shorthand que podemos usar nas nossas tags em html, agora quais são elas? só Deus sabe não chegamos nesse nível ainda &#x1F60E; &#x1F44D;.</p>
+    <hr>
+    <p>Resumo de tudo que vimos. <br>
+        Nem todas as fontes tem todas as possibilidades que demonstramos e explicamos aqui, a grande maioria não as tem, porém essa é a nova forma de implementar "negrito" e "itálico" sem que isso se misture com o html que é totalmente focado na semântica, que antigamente se usava com as tags "i"(italico) e "p"(negrito) e que agora no lugar do "i" que era a que dava função para colocar o italico, hoje nas CSS usamos na "font-style" e no lugar da tag "p" que dava a função do negrito, em CSS a "font-weight" , com isso ocupando seu espaço na forma e não na semântica, sendo essa a função das CSS, forma.</p>
+    <p><a href="fonte02.html" target="_self" rel="prev">voltar</a> para a página sobre tamanho de fontes.</p>
+</body>
+</html>

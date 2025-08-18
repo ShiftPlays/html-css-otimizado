@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando google fontes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+        body{
+            font-family:'Roboto Mono', serif;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando Google Fonts</h1>
+    <p>Para que a gente revise o que estudamos com base no que estamos fazendo aqui, deixarei disponibilizado a aula por trás dessa obra de arte que nós mesmo fizemos. <br>
+    <a href="https://www.youtube.com/watch?v=FLuQonci9wU" target="_blank" rel="external">Capítulo 14 Aula 06 - Usando Google Fonts</a></p>
+    <p>Para aplicarmos as fontes com base no <a href="https://fonts.google.com" target="_blank" rel="external">Google Fonts</a> precisaremos primeiro acessar o site e escolher uma fonte. Tendo escolhido clique em "get font" e depois vá na sacolinha onde estará as fontes, nela está escrito ao passar o mouse "view select families" &gt; "&lt; &gt; Get embed code" &gt; "selecione o @import" &gt; Copie as delarações da regra "@import" e coloque nas primeiras linhas dentro da tag "&lt;style&gt;&lt;/style&gt;" em "head"(a tag &lt;head&gt;&lt;/head&gt;)</p>
+    <p>Exite uma regra muito importante no CSS que é, tudo que começa com "<mark style="background-color:burlywood;">@</mark>" tem que ser colocado debaixo da tag "style" - (&lt;style&gt;&lt;/style&gt;) nas primeiras linhas antes dos seletores e declarações.</p>
+    <p>Vou copiar um "@import" do google fonts para demonstrar de uma forma mais eficiente:</p>
+    <p>
+        <pre>
+            <code>
+    &lt;style&gt;
+    <mark style="background-color:burlywood;">@import</mark> url('https://fonts.googleapis.com/css2?family=<mark style="background-color:rgba(137, 43, 226, 0.418);">Roboto+Mono</mark>:ital,wght@0,100..700;1,100..700&display=swap');
+    
+        <mark style="background-color:violet;">body</mark><mark>{</mark>
+            <mark style="background-color:rgba(165, 42, 42, 0.705);">font-family: <mark style="background-color:rgba(137, 43, 226, 0.418);">Roboto Mono</mark>, serif;</mark>
+        <mark>}</mark>
+        
+        <mark style="background-color:violet;">h1</mark><mark>{</mark>
+            <mark style="background-color:rgba(165, 42, 42, 0.705)">
+                font-family: Arial, sans-serif;
+                color: blue;
+            </mark>
+        <mark>}</mark>
+        
+        <mark style="background-color:violet;">p</mark> <mark>{</mark>
+            <mark style="background-color:rgba(165, 42, 42, 0.705)">
+                font-family: Arial, sans-serif;
+                color: blueviolet;
+            </mark>
+        <mark>}</mark>
+    &lt;/style&gt;
+            </code>
+        </pre>
+    </p>
+<hr>
+<p><mark style="background-color:rgba(137, 43, 226, 0.418);">Nesse exemplo vemos como é simples modificar a fonte no CSS sem sequer ter a fonte no nosso computador</mark></p>
+<p>Tudo que começa com "@" no CSS seja qual for o estilo, é chamado de "<mark style="background-color:burlywood;">Regra</mark>" <br> (Aqui é apenas um detalhe que temos que fixar na nossa cabeça e vou sempre demostrar a partir desse site aqui por que não nos atentamos por mais que na primeira apostila diga esse detalhe lá no módulo 1)</p>
+<p>O nome que damos as tags que nos referimos dentro tag "style" são chamadas de <mark style="background-color:violet;">seletor</mark>.</p>
+<p>Todas as escrituras dentro dos colchetes "<mark>{}</mark>" provenientes dos <mark style="background-color:violet;">seletores</mark> são chamados de <mark style="background-color:rgba(165, 42, 42, 0.705);">declarações</mark></p>
+<p>Uma observação a se fazer é que o google fonts está em constante mudança, pode ser que já esteja completamente diferente quando você, vulgo eu do futuro, estiver lendo isso de novo, mas fica a observação aí a gente é foda e você sabe disso gostosão. <br>
+Agora uma outra observação esse mesmo exemplo que demosntrei está carregando a forma como eu modifiquei a fonte desse site, usando apenas google fonts.</p>
+<p>Todas as fontes do google fonts são livres para uso.</p>
+<p>Três a quatro estilos de fontes para nosso site é mais que o necessário, pois podemos dividir as fontes para os títulos, porém se passar disso pode fazer com que o site vire uma bagunça visual e não queremos isso.
+</p>
+<p>Quando formos lançar nosso site, é bom que a gente use desse artifício para nosso site sair mais leve, e consequentemente melhor para as pesquisas assim como estudamos no primeiro capítulo.</p>
+<hr>
+<p>Para fontes externas baixadas <a href="fonte02.html" target="_self" rel="next">próxima página</a>.</p>
+
+<p>para página falando sobre tipos de alinhamento <a href="file:///C:/Users/ferna/OneDrive/Documentos/Estudos/html-css/Módulo%202/exercícios/ex017(tipografia)/fonte04.html" target="_blank" rel="external">Clique aqui</a></p>
+</body>
+</html>

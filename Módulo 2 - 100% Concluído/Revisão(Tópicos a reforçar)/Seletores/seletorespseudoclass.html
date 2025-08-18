@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Prática Pseudo-classes</title>
+</head>
+<body>
+    <p><a href="seletoresclasse.html" target="_self" rel="prev">Voltar</a> para praticar a respeito das classes.</p>
+    <hr>
+    <h1>Pseudo-classes (Pseudo-class)</h1>
+    <p>
+        <pre>
+            <code>
+               (css) : = pseudo-class (html)
+            </code>
+        </pre>
+    </p>
+    <p>Pseudo-classes(pseudo-class) são complementos poderosos para os identificadores(id's) e as classes(class). Basicamente é acrescentado no id(identificador) ou em uma classe(class) um complemento de acordo com o que cada pseudo classe oferece. <br>
+    Basicamente os exemplos vão nos dar uma noção maior do que eu estou falando.</p>
+    <hr>
+    <h3>Exemplos</h3>
+    <p id="shiftplays" class="shiftall">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur labore animi aut dicta est quod eius itaque! Consequatur possimus optio facere nemo id. Amet quisquam maiores adipisci est, aliquid quis?</p>
+    <p id="shiftdark" class="shiftantigotestamento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui saepe accusamus perferendis velit dolorum? Sapiente rerum atque autem cupiditate obcaecati inventore velit quam molestias, ipsam, iure, voluptates ratione nemo.</p>
+    <p id="shiftmamada" class="shiftantigotestamento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam facere, aliquid vel obcaecati itaque architecto expedita numquam quibusdam sed accusamus velit non, molestias temporibus delectus hic totam deserunt sit!</p>
+    <p id="shiftsatanico" class="shiftantigotestamento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias rem impedit nulla. Corporis exercitationem expedita nobis, aliquid reprehenderit harum quos tenetur animi fugiat nostrum sint commodi nisi necessitatibus neque.</p>
+    <p id="shiftserafim" class="shiftall">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatum totam debitis! Quae voluptatibus, odio molestiae quibusdam explicabo, quod a esse saepe, vitae alias quos sapiente dolorem voluptate nihil! Commodi.</p>
+    <p id="shiftanjo" class="shiftall">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia perspiciatis commodi similique! Expedita dolores molestiae perspiciatis, itaque voluptas corporis ad architecto beatae iste dicta porro possimus culpa repudiandae veritatis omnis.</p>
+    <h3>html</h3>
+    <p>
+        <pre>
+            <code>
+&lt;p id="shiftplays" class="shiftall"&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur labore animi aut dicta est quod eius itaque! Consequatur possimus optio facere nemo id. Amet quisquam maiores adipisci est, aliquid quis?&lt;/p&gt;
+&lt;p id="shiftdark" class="shiftantigotestamento"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui saepe accusamus perferendis velit dolorum? Sapiente rerum atque autem cupiditate obcaecati inventore velit quam molestias, ipsam, iure, voluptates ratione nemo.&lt;/p&gt;
+&lt;p id="shiftmamada" class="shiftantigotestamento"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam facere, aliquid vel obcaecati itaque architecto expedita numquam quibusdam sed accusamus velit non, molestias temporibus delectus hic totam deserunt sit!&lt;/p&gt;
+&lt;p id="shiftsatanico" class="shiftantigotestamento"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias rem impedit nulla. Corporis exercitationem expedita nobis, aliquid reprehenderit harum quos tenetur animi fugiat nostrum sint commodi nisi necessitatibus neque.&lt;/p&gt;
+&lt;p id="shiftserafim" class="shiftall"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatum totam debitis! Quae voluptatibus, odio molestiae quibusdam explicabo, quod a esse saepe, vitae alias quos sapiente dolorem voluptate nihil! Commodi.&lt;/p&gt;
+&lt;p id="shiftanjo" class="shiftall"&gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia perspiciatis commodi similique! Expedita dolores molestiae perspiciatis, itaque voluptas corporis ad architecto beatae iste dicta porro possimus culpa repudiandae veritatis omnis.&lt;/p&gt;
+            </code>
+        </pre>
+    </p>
+    <h3>css</h3>
+    <p>
+        <pre>
+            <code>
+                p#shiftplays<mark style="background-color:teal;">:hover</mark> {
+
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+                
+                p#shiftdark<mark style="background-color:teal;">:visited</mark> {
+                
+                    font-family: 'Times New Roman', Times, serif;
+                }
+                
+                p#shiftmamada<mark style="background-color:teal;">:active</mark> {
+                
+                     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+                }
+                
+                p#shiftsatanico<mark style="background-color:teal;">:checked</mark> {
+                
+                    font-family:Georgia, 'Times New Roman', Times, serif;
+                
+                }
+                
+                p#shiftserafim<mark style="background-color:teal;">:empty</mark> {
+                
+                    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                
+                }
+                
+                p#shiftanjo<mark style="background-color:teal;">:focus</mark> {
+                
+                    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                }
+
+                p.shiftall<mark style="background-color:teal;">:hover</mark> {
+
+                    font-style:oblique;
+                }
+                
+                p.shiftantigotestamento<mark style="background-color:teal;">:hover</mark> {
+
+                    font-style:italic;
+                }
+            </code>
+        </pre>
+    </p>
+    <p>Bom, o conceito de cada pseudo classe a gente já tem na primeira página, então isso aqui é apenas para demonstrar como podemos usa-la.</p>
+    <hr>
+    <p class="next"><a href="pseudoelemento.html" target="_self" rel="next">Clique aqui</a> para praticar os pseudo elementos(pseudo-element)</p>
+</body>
+</html>

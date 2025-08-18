@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tipografia</title>
+    <style>
+        body{
+            font-family: Arial;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h6{
+            font-family: OpTic;
+        }
+        p {
+            text-align: justify;
+            text-indent: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <h2>Conceitos do seletor "Font-family" CSS e suas declarações.</h2>
+    <p>Olha só, uma explicação bem breve sobre como eu mudei a fonte desse site.</p> 
+    <p>Você pode mudar pra exatamente qualquer uma que você quiser contando que esteja instalado no seu dispositivo(Computador - vulgo nosso pc) utilizando CSS.</p> 
+    <p>E aqui nos aprofundaremos no conceito de "font-family" das CSS.</p>
+    <p>
+        <pre>
+            <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width,initial-scale:1.0"
+&lt;title&gt;PAU PLAYS&lt;/title&gt;
+<mark>
+    &lt;style&gt;
+        {
+            font-family: Arial;
+        }
+    &lt;/style&gt;
+</mark>
+&lt;/head&gt;
+            </code>
+        </pre>
+    </p>
+    <h2>Tipografia</h2>
+    <p>Antes de explicar com demonstrações, primeiro temos que explicar o que estudamos a respeito de <mark style="background-color:rgb(124, 151, 241);">tipografia</mark> para poder entender os exemplos que nós mesmo faremos para revisar.</p>
+    <p>Na tipografia existem as chamadas
+    "anatomia dos tipos" que são literalmente o estudo anatômico das fontes com o objetivo que dar a elas significado com base no objetivo por trás da utilização das mesmas.
+    <br>
+    Por exemplo as fontes:</p>
+    <p style="font-family:brussels;"><mark style="background-color:rgb(124, 151, 241);">pênis</mark></p>
+    <p style="font-family:fustian;"><mark style="background-color:rgb(124, 151, 241);">pênis</mark></p>
+    <p>Qual das duas são ideais para utilizar em algo que queira dar a entender algo que foi feito a mão?? Certamente a primeira! com isso também complemento - existe uma psicologia por trás das fontes. 
+    <br> 
+    A psicologia das fontes que se origina por intermédio da tipografia.</p>
+    <p>Agora sendo bem direto, existem na anatômia das fontes seus nomes e objetivos especificos com base em estudos ciêntificos que comprovam alguns fatores do nosso sub-consciênte. Que porra foi essa que eu falei?? Vou separar por tópicos para você entender arrombado.</p>
+    <h3>Anatomia do tipo</h3>
+    <picture>
+        <source media="(max-width: 580px)" srcset="imagens/conceito-p.png">
+        <source media="(max-width: 700px)" srcset="imagens/conceito-m.png">
+        <img src="imagens/conceito-g.png" alt="conceito">
+    </picture>
+    <p>Esse é o corpo de uma fonte.</p>
+    <h3>Categorias de Fontes</h3>
+    <picture>
+        <source media="(max-width: 580px)" srcset="imagens/categorias-de-fontes-p.png">
+        <source media="(max-width: 700px)" srcset="imagens/categorias-de-fontes-m.png">
+        <img src="imagens/categorias-de-fontes-g.png" alt="categorias de fontes">
+    </picture>
+    <h4>Fontes Serifadas(serif)</h4>
+    <p>As fontes serifadas são literalmente as fontes que possuem serifas. Com as "serifas" cria-se uma linha imaginária que nosso cérebro percebe, criando uma linha invisivel que facilita nossa percepção na hora da leitura. <br> 
+    (Recomendação para impressões em papel é indicado fontes cerifadas.)</p>
+    <picture>
+        <source media="(max-width: 580px)" srcset="imagens/imagem-serifas-p.png">
+        <source media="(max-width: 700px)" srcset="imagens/imagem-serifas-m.png">
+        <img src="imagens/imagem-serifas-g.png" alt="demonstrações serifas">
+    </picture>
+    <hr>
+    <h5>Componentes anatômicos geométricos</h5>
+    <picture>
+        <source media="(max-width: 580px)" srcset="imagens/anatomia-geometrica-p.png">
+        <source media="(max-width: 700px)" srcset="imagens/anatomia-geometrica-m.png">
+        <img src="imagens/anatomia-geometrica-g.png" alt="geometria">
+    </picture>
+    <h5>Anatomias humanizadas</h5>
+    <picture>
+        <source media="(max-width: 580px)" srcset="imagens/anatomia-humanizada-p.png">
+        <source media="(max-width: 700px)" srcset="imagens/anatomia-humanizada-m.png">
+        <img src="imagens/anatomia-humanizada-g.png" alt="anatomia">
+    </picture>
+    <hr>
+    <h4>Fontes não serifadas(sans-serif)</h4>
+    <p>"Sans-serif" do francês e em português "sem serifa" que é o nome que representa as fontes não serifadas. <br> (Hoje em dia a recomendação para textos muito longos em sites é dar preferências para as fontes não serifadas.) </p>
+    <h4>Monoespaçadas(monospace)</h4>
+    <p>Todas as fonte mono-espaçadas podem ser com ou sem serifas, que é caracterizada pelo seu espaçamento, todas as letras e simbulos possuindo o mesmo nível de espaço.</p>
+    <h4>handwriting(escrita a mão)</h4>
+    <p>"Handwriting" ou conhecida como fonte de script, fonte escriptada. Ela tem esse nome pois ela tenta simular a escritura a mão, simulando a caligrafia humana.</p>
+    <h4>Display</h4>
+    <p>A bagunçada "fonte comemorativa" ou "fonte display". Ela não se baseia em tamanhos, não tem linha base, não obedece as normas anatômicas, e ela representa até mesmo as fontes sem letras, das quais são representadas com desenhos, naturalmente fontes de logos de jogos e filmes, essas são as caracteristicas de uma "fonte display".<br>(Fontes das quais baixamos com frequência com base nos jogos que apresentamos nas thumbnails.)</p>
+    <p></p>
+    <h3>Família tipográfica</h3>
+    <picture>
+    <source media="(max-width: 580px)" srcset="imagens/familia-tipografica-p.png">
+    <source media="(max-width: 700px)" srcset="imagens/familia-tipografica-m.png">
+    <img src="imagens/familia-tipografica-g.png" alt="familia tipográfica">
+    </picture>
+    <p>Essas são os vários formatos de representar os glifos sendo essas o chamado "famílias tipográficas" das quais nem todas as fontes tem porém essas são todas as variações que existem. <br> "light", "normal", "seminegrito", "negrito" e "extranegrito".</p>
+    <picture>
+    <source media="(max-width: 580px)" srcset="imagens/glifo-p.png">
+    <source media="(max-width: 700px)" srcset="imagens/glifo-m.png">
+    <img src="imagens/glifo-g.png" alt="glifos">
+    </picture>
+    <p>O conjunto de todos os <mark style="background-color:burlywood">glifos</mark> em uma determinada família são chamados de <mark>fonte.</mark><br>(glifo??? - é uma letra seja ela do "a" ao "z" de uma determinada fonte.)</p>
+    <h1>Famílias de fonte</h1>
+    <h2>Exemplos</h2>
+    <p>Aula para revisar com base nesses conteúdo que estamos escrevendo:<br><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-14-aula-03-familias-de-fonte-com-css/#google_vignette" target="_blank" rel="External">"Capítulo 14 Aula 04 - Tamando de fonte e suas medidas".</a></p>
+    <h2>Css Safe Font Combinations</h2>
+    <p>Neste <a href="https://www.w3schools.com/cssref/css_websafe_fonts.php" target="_blank" rel="external">site</a> que encontramos ao pesquisar "css web safe font combinations" no <a href="https://www.google.com.br/?hl=pt-BR" target="_blank" rel="external">google</a> encontramos vários exemplos de "safe combinations" para usarmos. Mas como funcionam as "safe combinations" e o que diabos é isso?</p>
+    <p>As "safe combinations" - ("combinação segura" em português) são as combinações de fontes que podem ser usadas nas CSS que decidem qual será a fonte do site. Sei que a explicação tá bem confusa de inicio, mas vou demonstrar e explicar com exemplos ao longo desta escrita. <br> Exemplo 1:</p>
+<p>
+    <pre>
+        <code>
+            &lt;style&gt;
+            {
+                font-family: <mark style="background-color:blue;">Arial</mark>, <mark style="background-color:blueviolet;">Helvetica</mark>, <mark style="background-color:rgb(238, 200, 150);">sans-serif</mark>;
+            }
+            &lt;/style&gt;
+        </code>
+    </pre>
+</p>
+<p>Na parte <mark style="background-color:blue;">azul</mark> representada, vemos o nome da fonte "Arial" que é a primeira na ordem que colocamos no parâmetro das CSS  para que o site passe a ter como padrão a fonte arial, certo? isso significa que se ao colocar isso na nossa tag &lt;style&gt; e no nosso computador não tivermos a fonte "arial", como vimos na combinação logo em seguida a fonte sugerida é a fonte <mark style="background-color:blueviolet;">"Helvetica"</mark> certo? ou seja, supondo que o a fonte "arial" não seja uma opção já que ela não estaria instalada no computador, uma opção seguinte seria a "helvetica" e daí o site teria como padrão a segunda opção descrita no parâmetro das CSS já que a primeira não foi válida uma vez que não tendo ela como opção. Já a terceira opção "<mark style="background-color:rgb(238, 200, 150);">sans-serif</mark>" significa idependente de ser Arial ou Helvetica, no final se não tiver nenhuma das duas como opção, esse ultimo parêmetro encontrará uma fonte que seja "não serifada" do francês "sans-serif". <br> E essa é uma de várias famílias de fontes! &#x1F60E; &#x1F44D;</p>
+<h6>FONTE DA LENDA VIVA <mark style="color: #12375C"><a href="https://www.youtube.com/VenomExtreme" target="_blank" rel="external">VENOM EXTREME</a></mark></h6>
+<hr>
+<p>Próxima página falando sobre fontes e suas medidas "font-size" <a href="fonte02.html" target="_self" rel="next">clique aqui</a></p>
+<p>Para página falando sobre tipos de alinhamento <a href="fonte04.html" target="_self" rel="next">clique aqui</a></p>
+</body>
+</html>

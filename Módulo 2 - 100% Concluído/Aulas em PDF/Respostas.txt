@@ -1,0 +1,64 @@
+13 - Cores.pdf
+
+1.C
+2.B
+3.B
+4.D
+5.C
+6.A
+7.B
+8.A
+9.A
+10.D
+
+14 - Fontes.pdf
+
+1.A
+2.C
+3.B
+4.B
+5.B
+6.A
+7.D
+8.D
+9.C
+10.A
+
+15 - Seletores Personalaizados.pdf
+
+1.B
+2.A
+3.C
+4.A
+5.B
+6.D
+7.C
+8.D
+9.A
+10.C
+
+16 - Modelo de Caixas.pdf
+
+1.B
+2.A
+3.D
+4.C
+5.A
+6.C
+7.C
+8.D
+9.C
+10.A
+
+17 - Primeiro mini-projeto.pdf
+
+1.B
+2.B
+3.A
+4.C
+5.A
+6.D
+7.B
+8.A
+9.B
+10.D

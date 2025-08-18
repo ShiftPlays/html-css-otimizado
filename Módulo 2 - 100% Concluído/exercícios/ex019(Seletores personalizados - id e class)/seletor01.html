@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Seletores Personalizados</title>
+</head>
+<body>
+    <h1 id="principal">Seletores Personalizados</h1>
+    <h1>Seletores Personalizados (Repetido propositalmente apenas para explicarmos a respeito desse tema)</h1>
+    <p>Basicamente nesse conteúdo aprenderemos a como personalizar um seletor(Seletores são as indicações das tags nas CSS para aplicarmos a forma no HTML). Vamos aprender a alterar um seletor específicamente caso queiramos modificar algum em específico.</p>
+    <p>Antes de mais nada, vamos disponibilizar a aula que estudamos por trás desses conceitos <a href="https://www.youtube.com/watch?v=TZuVpJmSNSE" target="_blank" rel="external">Capítulo 15 Aula 01 – Usando o id com CSS</a></p>
+    <h2>Exemplos e conceitos dos seletores personalizados nas CSS</h2>
+    <h3>Ligações entre a propriedade (id="") e os seletores com cerquilha(#)</h3>
+    <p>Nessa aula usaremos CSS em estilo externo, e criaremos ela da seguinte maneira: no mesmo espaço onde criamos o inicio de nossos projetos html, no lugar de "index.html" ou qualquer nome ".html" vamos escrever "style.css" ou qualquer nome ".css". Mas claro isso só vai funcionar se usarmos essa tag dentro de "head"(&lt;head&gt;&lt;/head&gt;) no nosso html.</p>
+    <p>
+        <pre>
+            <code>
+                &lt;head&gt;
+                    <mark>&lt;link rel="stylesheet" href="style.css"&gt;</mark>
+                &lt;/head&gt;
+            </code>
+        </pre>
+    </p>
+    <hr>
+    <p>Dentro desse projeto CSS essas foram as coisas que colocamos lá, vou ir explicando conforme cada tópico destacado</p>
+    <h3>CSS:</h3>
+
+    <p>
+        <pre>
+            <code>
+<p id="CSS">
+    <mark style="background-color:rgb(162, 66, 240);">@</mark>charset "UTF-8";
+    
+    body {
+        background-color: rgb(193, 233, 235);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    h1<mark>#</mark>principal{
+        text-align:center;
+        color:rgb(99, 99, 241);
+    }
+    
+    h1 {
+        text-align:left;
+    }
+    
+    h2 {
+        text-align:left;
+    }
+    
+    p {
+        text-align:justify;
+        text-indent:30px;
+    }
+</p>
+            </code>
+        </pre>
+    </p>
+<p><mark style="background-color:rgb(162, 66, 240);">@</mark> - Uma regra com a mesma função do "&lt;meta charset "UTF-8"&gt;" que sempre configuramos no inicio de todos os nosso projetos html, exercendo a mesma funcão(função essa que permite usar caracteres especiais, como acentos, cedilhas entre outros.)</p>
+<p><mark>#</mark> Cerquilha usada para representar a propriedade (id="") do HTML</p>
+<hr>
+
+    <h3>HTML:</h3>
+    <p>
+        <pre>
+            <code>
+                <p id="tag">&lt;h1 <mark>id="principal"</mark>&gt;Seletores Personalizados&lt;/h1&gt;
+    &lt;h1&gt;Seletores Personalizados <br>(Repetido propositalmente apenas para explicarmos a respeito desse tema)&lt;/h1&gt;</p>
+            </code>
+        </pre>
+    </p>
+<hr>
+<h3></h3>
+
+<p><mark>Em html - "id" (propriedade)</mark> = em CSS - "#" (cerquilha)
+<ul>
+<li>Só pode uma por tag</li>
+</ul>
+<br>
+Em html - "class" (propriedade) = em CSS - "Ponto(.)" 
+<ul>
+<li>Pode ser usado em várias tags</li>
+</ul>
+</p> 
+
+<p><mark>Em outras palavras a propriedade (id="") no html é representada nas CSS como cerquilha(#)</mark>. Já a propriedade (class="") no html é representada como um ponto(.) nas CSS</p>
+
+<p>Basicamente "id" e "#" - "class" e "ponto (.)" são os responsáveis pelos seletores personalizados e elas podem ser usadas em todas as tags consequentimente refletindo nos seletores.</p>
+
+<p>O (id="") se sobrepõe as configurações de classe (class="") caso queiramos juntar as propriedades (basicamente conseguimos colocar "id" e "class" no mesmo elemento).Também conseguimos colocar mais de uma classe (class="") no mesmo elemento.</p>
+
+<p>Agora qual a diferença de (id="") e (class="")?? <br> A diferença entre as duas são a forma de utilizar, de resto, elas tem basimante a mesma função. A propriedade "id" (id="") conhecida como "identificador" é utilizada apenas uma vez por tag segundo as indicações da <a href="https://www.w3.org/" target="_blank" rel="external">W3C</a> (World Wide Web Consortium), já as classes (class="") podem ser usadas mais de uma vez em várias tags de acordo com suas funções para auxiliar melhor na organização do site.</p>
+<p>Agora vou demonstrar exemplos de identificadores e classes no site da próxima página. Mas deixarei por lá também esses mesmos exemplos.</p>
+
+<p>Aula falando exclusivamente a respeito das classes: <a href="https://www.youtube.com/watch?v=zXfTjPrMC_0&t=700s" target="_blank" rel="external">Capítulo 15 Aula 02 – As diferenças entre id e class</a></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zXfTjPrMC_0?si=RipsUAbRkPI5Ct1j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p id="esquerda"><a href="seletor02.html" target="_self" rel="next">Próxima página</a></p>
+</body>
+</html>

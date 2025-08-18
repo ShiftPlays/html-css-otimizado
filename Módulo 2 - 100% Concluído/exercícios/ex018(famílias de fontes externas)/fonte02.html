@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas baixadas</title>
+    <style>
+        @font-face {
+            font-family: 'love';
+            src: url('Fontes/love larry.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        /*
+        
+        tipos de "format()"
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (Apple Advanced Typography)
+        - svg
+        
+        */
+        body {
+            font-family: arial, sans-serif;
+            font-size: 1em
+        }
+
+        h1 {
+            font-family: 'love', Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes Externas Baixadas</h1>
+    <h2></h2>
+    <p>Aula onde tiramos base de tudo que aplicamos aqui. <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-14-aula-07-usando-fontes-externas-baixadas/" target="_blank" rel="external">Capítulo 14 Aula 07 – Usando fontes externas baixadas</a></p>
+
+    <p>Algo que conhecemos e foi apresentado na aula é o site <a href="https://www.dafont.com/pt/" target="_blank" rel="external">dafont.com</a> onde baixamos uma fonte e faremos as demonstrações.</p>
+    <p>Agora vou ser bem direto com você, fiz exatamente o que foi ensinado na aula, porém não funcionou, mas como a aula está disponível, fique com ela para usar de base para tirar dúvida. Agora como a gente bem sabe, o objetivo da aula era como colocar fontes externas no site.</p> 
+    <p>A gente consegue fazer isso deixando a fonte instalada no nosso computador e apenas usar ela nas CSS apenas colocando o nome dela na declaração "font-family".</p>
+    <p>Não sei se de fato isso vai resolver nosso problema, mas acredito que ficar atento a isso é uma boa pedida, vamos praticar mais esta bosta pra ter certeza do que estamos falando</p>
+    <hr>
+    <p>Agora vamos lá, vou deixar aqui tudo que aprendemos nessa aula.</p>
+    <p>
+        <pre>
+            <code>
+                &lt;style&gt;
+                <mark style="background-color: yellowgreen;">@font-face</mark> {
+                    <mark style="background-color:wheat;">font-family:</mark> <mark style="background-color:violet;">'love'</mark>;
+                    <mark style="background-color:wheat;">
+                        src: url('Fontes/love larry.ttf') format('truetype');
+                        font-weight: normal;
+                        font-style: normal;
+                    </mark>
+                }
+                
+                body {
+                    <mark style="background-color:wheat;">
+                        font-family: arial, sans-serif;
+                        font-size: 1em
+                    </mark>
+                }
+        
+                h1 {
+                    <mark style="background-color: wheat;">font-family:</mark> <mark style="background-color:violet;">'love'</mark>, <mark style="background-color:wheat;">Helvetica, sans-serif;</mark>
+                }
+                &lt;/style&gt;
+            </code>
+        </pre>
+    </p>
+    <p>A gente aprendeu nessa aula a respeito da regra "<mark style="background-color:yellowgreen;">@font-face</mark>" e suas <mark style="background-color:wheat;">declarações</mark>.</p>
+    <p>E uma declaração importante a ser mencionada é a "format" proveniente da regra "@font-face". <br> Tem um detalhe nela que temos que entrar em detalhe quando o arquivo da fonte for de especifico tipo, como por exemplo:</p>
+    <p>tipos de "format()".</p>
+    <p>
+        <ul>
+            <li>opentype (otf)</li>
+            <li>truetype (ttf)</li>
+            <li>embedded-opentype</li>
+            <li>truetype-aat (Apple Advanced Typography)</li>
+            <li>svg</li>
+        </ul>
+    </p>
+    <p>Quando o arquivo mencionado em "scr url()" for ".otf" por exemplo, em "format()" deveremos escrever...</p>
+    <p>
+        <pre>
+            <code>
+                format(opentype)
+            </code>
+        </pre>
+    </p>
+
+    <p>Assim como é especificado nos exemplos acima.</p>
+    <p>Mas como eu disse no inicio, por algum motivo no meu caso não deu certo então vou deixar o vídeo da aula para quando formos tirar nossas duvidas.
+    </p>
+    <hr>
+    <p>como identificar <a href="fonte03.html" target="_self" rel="next">fontes por imagens</a></p>
+    <p><a href="fonte01.html" terget="_self" rel="prev">Voltar</a> para fontes do google fontes.</p>
+</body>
+</html>

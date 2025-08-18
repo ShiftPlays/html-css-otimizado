@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+p#next {
+    text-align: right;
+}
+
+p#demonstração {
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+code {
+    font-size: 20px;
+    color:steelblue
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+p.next {
+
+    text-align: right;
+}
+
+p.shiftplays {
+
+    font-family: 'Coluna Rounded', 'Gotham', 'sans-serif';
+}
+
+p.satanas {
+
+    font-family:  serif;
+}
+
+p#shiftplays:hover {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p#shiftdark:visited {
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p#shiftmamada:active {
+
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+p#shiftsatanico:checked {
+
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+p#shiftserafim:empty {
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+p#shiftanjo:focus {
+
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p.shiftall:hover {
+
+    font-style:oblique;
+}
+
+p.shiftantigotestamento:hover {
+
+    font-style:italic;
+}
+
+p#pseudoelement::before {
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p#pse::after {
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p#ps::first-letter {
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p#p::first-line {
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

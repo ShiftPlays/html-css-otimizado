@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Seletores Personalizados</title>
+</head>
+<body>
+    <h1>Seletores Personalizados</h1>
+    <p> 
+        <pre>
+            <code>
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children
+            </code>
+        </pre>
+    </p>
+    <h2>id</h2>
+    <p>No CSS, o "id" é usado para identificar um elemento HTML específico e aplicar estilos únicos a ele.</p>
+    <h2>Class</h2>
+    <p>No CSS, a classe (class) é um seletor que permite aplicar estilos a múltiplos elementos HTML que compartilham características em comum.</p>
+    <h2>Pseudo-classes</h2>
+    <p>: = pseudo-class</p>
+    <p>As pseudo-classes em CSS são seletores que permitem aplicar estilos a um elemento com base no seu estado ou posição em um elemento pai.</p>
+    <p>Existem várias pseudo-classes para estilos, podemos citar <br>
+        :hover, :visited, :active, :checked, :empty e :focus.</p>
+    <ul>
+        <li>:hover <br> Em CSS, :hover é uma pseudo-classe que permite aplicar estilos a um elemento quando o cursor do mouse passa sobre ele.</li>
+        <br>
+        <li>:visited <br> Em CSS, :visited é uma pseudoclasse que seleciona links que o usuário já visitou em uma página web.</li>
+        <br>
+        <li>:active <br> Em CSS, :active é uma pseudo-classe que aplica estilos a um elemento quando o usuário está ativamente interagindo com ele,  frequentemente usado para dar aos usuários feedback visual sobre a interação, indicando que eles estão clicando em um elemento.</li>
+        <br>
+        <li>:checked <br> Em CSS, :checked é uma pseudo-classe que seleciona elementos &lt;input&gt; (caixas de seleção e botões de rádio) e &lt;option&gt; que estão selecionados ou "marcados". Permite aplicar estilos específicos a esses elementos quando estão no estado selecionado, sem a necessidade de usar JavaScript. <br> A pseudo-classe checked é usada para estilizar elementos &lt;input type="checkbox"&gt;(<input type="checkbox">), &lt;input type="radio"&gt;(<input type="radio">) e &lt;option&gt; quando estão selecionados. <a href="https://www-w3schools-com.translate.goog/cssref/sel_checked.php?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=sge#:~:text=Definição%20e%20Uso,em%20um%20elemento%20." target="_blank" rel="external">fonte</a></li>
+        <br>
+        <li> :empty <br> Em CSS é usada para selecionar elementos que não possuem nenhum conteúdo, elementos que estão vazios (filhos/children, incluindo texto ou espaço em branco). É útil para estilizar(dar estilo) ou manipular elementos vazios de forma condicional.</li>
+        <br>
+        <li> :focus <br> Em CSS é usada para estilizar(dar estilo) um elemento quando ele recebe o foco, geralmente ao ser clicado ou selecionado com a tecla Tab.</li>
+    </ul>
+    <h2>Pseudo-elementos</h2>
+    <p>:: = pseudo-element</p>
+    <p>Em CSS, pseudo-elementos são palavras-chave que permitem estilizar partes específicas de um elemento HTML, que não são elementos de forma explícita no código HTML, como a primeira letra, a primeira linha ou conteúdo adicionado antes ou depois de um elemento.</p>
+    <p>Os principais pseudo-elementos usados nas CSS são <br>
+        ::before, ::after, ::first-letter, ::first-line.</p>
+    <ul>
+        <li>::before 
+            Insere conteúdo antes do conteúdo de um elemento, sem a necessidade de criar um novo elemento no HTML.
+            <br> 
+            Exemplo: ssss
+        </li>
+        <br>
+        <li>::after <br> insere conteúdo após o conteúdo de um elemento específico, utilizando a propriedade content. Este conteúdo inserido é tratado como um filho do elemento, e não como um irmão do seu conteúdo. </li>
+        <br>
+        <li>::first-letter <br> É um pseudoelemento que seleciona a primeira letra do primeiro elemento de um texto de nível de bloco (como um parágrafo &lt;p&gt;) e permite aplicar estilos apenas a essa letra. É útil para criar letras capitulares ou efeitos de drop caps, sem a necessidade de modificar o HTML ou adicionar tags específicas. 
+        <br>Exemplo:
+        <img src="https://www-w3-org.translate.goog/wiki/images/4/4e/Css3_selectors_first-letter_B.png?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=sge" alt="pseudo elemento first-letter">
+        </li>
+        <li> ::first-line <br> É um pseudoelemento que permite estilizar a primeira linha de texto dentro de um elemento de nível de bloco (como um parágrafo &lt;p&gt;). Com este pseudoelemento, é possível aplicar propriedades de fonte, cor, e fundo, entre outras, especificamente à primeira linha de texto dentro de um elemento. </li>
+    </ul>
+    <hr>
+    <p id="next" class="next"><a href="seletoresid.html" target="_self" rel="next">Pratique aqui</a> depois de se situar bem dos conceitos</p>
+</body>
+</html>
