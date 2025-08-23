@@ -1,0 +1,50 @@
+Vídeo relacionado a aula em que estamos anotando isso: https://www.youtube.com/watch?v=c-MATEcIuPQ
+
+Capítulo 18 Aula 10 – GitHub em vários PCs
+
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+Dicas: 
+
+Você quer usar seu repositório no github em outro computador, como fazer isso?
+
+Precisaremos das seguintes ferramentas: 
+
+Navegador (O que você preferir)
+Visual Studio Code
+Git
+GitHub Desktop
+
+Abra o GitHub Desktop > File > Options > Accounts
+
+Para "GitHub.com" você clica em "Sign in" > Ele vai pedir para logar e você loga em sua conta GitHub.
+
+Até aqui apenas o "GitHub" vai estar conectado, não o "Git", então vamos conectar da seguinte forma: 
+
+File > Git > apenas clique na caixinha onde está escrito o "Name" e o "Email" e clique em save. 
+
+Pronto, a partir daqui o Git estará configurado para não dar erro na hora de fazer um commit.
+(um commit é o ato de salvar as alterações feitas em um projeto, como código, arquivos de configuração ou outros elementos, em um sistema de controle de versão, como o Git)
+
+A partir daqui nossos repositórios estarão disponíveis para clonar no computador. (Coloque-a onde quiser)
+
+Acrescente o que tiver que acrescentar e faça o "commit" e publique no seu repositório clicando em "Push origin".
+
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+E para sair sem deixar vestígios de tudo que foi feito no computador, feche todas as abas abertas menos a do "GitHub Desktop".
+
+Siga os seguintes paços:
+
+1. Repository > Remove > Marque "Also move this repository to Recycle Bin" para mover para lixeira do computador. 
+
+2. Logo em seguida deslogar sua conta do GitHub desktop clicando em File > Options > Na ala "Accounts" clicar me "Sign Out" > e na ala "Git" apagar as informações em "Name" e "Email" logo em seguida clicar em "salvar".
+
+3. Esvasiar a lixeira.
+
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+Indicações extras do professor Gustavo Guanabara a respeito de GitHub.
+
+Ele nos indica aumentar a segurança da nossa conta GitHub seguindo as indicações do vídeo "Seu GitHub muito mais seguro - Curso de Git e GitHub" do Curso de Git e GitHub.
+(https://www.youtube.com/watch?v=bsI6P_IM_hg&list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA&index=11)
