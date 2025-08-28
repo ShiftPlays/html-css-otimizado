@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
+
+            /*
+            Shorthand - background
+            
+            color > image > position > repeat > [size] > attachment
+            */
+
             height: 100vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
-
+            background-attachment: fixed;
+            
             /*
             Na propriedade "background-size:;" temos os valores:
 
@@ -32,11 +40,16 @@
             
             Em pixel você pode configurar tanto para definir dimenção única(100px) quanto ambas(100px 100px).
             */
+
+            /*
+            "background-attachment" em português "anexo-de-fundo"
+            
+            */
         }
         
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border:1px solid darkblue;
@@ -47,7 +60,19 @@
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione accusantium quam necessitatibus, eligendi dicta odio itaque neque sint natus magnam, vel id dolores nostrum quas omnis, minima ipsa numquam. Sint.</p>
+        <h2>Shorthanh - background</h2>
+        <p>color &gt; image &gt; position &gt; repeat &gt; [size] &gt; </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat consequuntur voluptatem porro quis, quam cum atque suscipit rem ipsa commodi quo. Tempore incidunt sapiente eaque? Harum temporibus ab similique dolorum.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat consequuntur voluptatem porro quis, quam cum atque suscipit rem ipsa commodi quo. Tempore incidunt sapiente eaque? Harum temporibus ab similique dolorum.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat consequuntur voluptatem porro quis, quam cum atque suscipit rem ipsa commodi quo. Tempore incidunt sapiente eaque? Harum temporibus ab similique dolorum.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat consequuntur voluptatem porro quis, quam cum atque suscipit rem ipsa commodi quo. Tempore incidunt sapiente eaque? Harum temporibus ab similique dolorum.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat consequuntur voluptatem porro quis, quam cum atque suscipit rem ipsa commodi quo. Tempore incidunt sapiente eaque? Harum temporibus ab similique dolorum.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat consequuntur voluptatem porro quis, quam cum atque suscipit rem ipsa commodi quo. Tempore incidunt sapiente eaque? Harum temporibus ab similique dolorum.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat consequuntur voluptatem porro quis, quam cum atque suscipit rem ipsa commodi quo. Tempore incidunt sapiente eaque? Harum temporibus ab similique dolorum.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat consequuntur voluptatem porro quis, quam cum atque suscipit rem ipsa commodi quo. Tempore incidunt sapiente eaque? Harum temporibus ab similique dolorum.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat consequuntur voluptatem porro quis, quam cum atque suscipit rem ipsa commodi quo. Tempore incidunt sapiente eaque? Harum temporibus ab similique dolorum.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat consequuntur voluptatem porro quis, quam cum atque suscipit rem ipsa commodi quo. Tempore incidunt sapiente eaque? Harum temporibus ab similique dolorum.</p>
+
     </main>
 </body>
 </html>
