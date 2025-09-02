@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+
+            font-family:Arial, Helvetica, sans-serif;
+            background-color:dimgray;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+
+            background-color: antiquewhite;
+            padding: 3px;
+            box-shadow: 1px 1px 1px 1px black;
+            
+            /*
+            "(premeiro "px" na ordem)" - 
+            Deslocamento horizontal(Offset X Ou Desvio X)
+            */ 
+            
+            /*
+            "(segundo na "px" na ordem)"
+            Deslocamento vertical*(Offset Y ou Desvio Y)
+            */ 
+            
+            /*
+            (terceiro "px" nessa ordem)"
+            Espalhamento(Spread)
+            */
+            
+            /*
+            "black" - sombra
+            */
+
+            /*
+            Por padrão "outset("início" a tradução)/sombra externa"
+            */
+
+            /*
+            Ordem: 
+            X offset(Desvio X), 
+            
+            Y offset(Desvio Y), 
+            
+            Blur(Borrão), 
+            
+            Spread(Espalhar).
+            */
+
+            box-shadow: inset 1px 1px 1px black;
+
+            /*
+            Inset - Inserir (Sombra interna)
+            */
+
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: rgb(155, 126, 126);
+            font-weight: bold;
+            margin: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            padding: 3px
+        }
+
+        main {
+
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 2px;
+            /*
+            border-radious >
+
+                border-top-left-radius: ; 
+                (Canto Superior Esquerdo)
+
+                border-top-right-radius: ;
+                (Canto Superior Direito)
+
+                border-bottom-right-radius: ;
+                (Canto Inferior Direiro)
+
+                border-bottom-left-radius: ;
+                (Canto Inferior Esquerdo)
+            */
+
+        }
+
+        article {
+            background-color: lightgray;
+        }
+
+        article > aside {
+            background-color:rgb(161, 161, 161);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align:center;
+            padding: 1px;
+            margin: 0px;           
+        }
+        footer > p {
+
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="Aula.html" target="_self" rel="next">Aula</a>
+            <a href="caixa03.html" target="_self" rel="next">Bordas decoradas</a>
+            <a href="caixa01.html" target="_self" rel="next">Box level</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <p>Esportes Política Tecnologia Porno</p>
+            <article>
+                <h2>Notícias Porno do Brasil com Kenneth 09</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam magni incidunt suscipit odit dicta ratione fugit libero, placeat quis, dolorem voluptate obcaecati quidem porro. Est quia asperiores quos alias consectetur.</p>
+                <aside>
+                    <p>artigo escrito por Fernando Antônio</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo ShiftPlays</p>
+    </footer>
+<p>As tags &lt;header&gt;, &lt;main&gt;, &lt;footer&gt; são reconhecidas pelo navegador como se fossem a tag &lt;div&gt;, sendo isso o que chamamos de grouping tags.</p>
+</body>
+</html>
