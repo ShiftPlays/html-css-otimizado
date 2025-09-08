@@ -14,6 +14,13 @@
             border-collapse: collapse; /*  Essa declaração (propriedade) "border-collapse: collapse;"(valor) é o que une as linhas na tabela diferente do valor "separate" que é o padrão mesmo sem fazer essa declaração. */
         }
 
+        table#t2 {
+            width: 400px;
+            height: 400px;
+            text-align: center; /* Alinhamento horizontal (valores: left, center, right) */
+            vertical-align: top; /* Alinhamento vertical (valores: top, middle[meio], bottom) */
+        }
+
         td#ciano {
             background-color: aquamarine;
         }
@@ -35,8 +42,10 @@
     -->
     
     <p>Se a hierarquia das tags a de tabelas não for obedecida, os dados vão aparecer ou antes ou depois da tabela.</p>
+    
+    <h2>Tabela 1</h2>
 
-    <table>
+    <table> <!-- Tabela 1 -->
         <tr> <!-- Primeira linha -->
             <td>A1</td>
             <td>B1</td>
@@ -45,6 +54,30 @@
         <tr> <!-- Segunda linha -->
             <td>A2</td>
             <td id="ciano">B2</td>
+            <td>C2</td>
+        </tr>
+        <tr> <!-- Terceira linha -->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr> <!-- Quarta linha -->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+    
+    <h2>Tabela 2</h2>
+    <table id="t2"> <!-- Tabela 2 -->
+        <tr> <!-- Primeira linha -->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr> <!-- Segunda linha -->
+            <td>A2</td>
+            <td>B2</td>
             <td>C2</td>
         </tr>
         <tr> <!-- Terceira linha -->
