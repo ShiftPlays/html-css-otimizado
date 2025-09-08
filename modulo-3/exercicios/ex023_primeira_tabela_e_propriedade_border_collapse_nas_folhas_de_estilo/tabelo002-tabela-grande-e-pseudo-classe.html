@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        /*
+        Sobre pseudo-classe logo a baixo:
+        ":nth-child()" que ocasiona o efeito zebrado na tabela. 
+
+        ":nth-child(odd)" - "odd" em português "impar" também resultando no mesmo ao escrever "2n-1".
+
+        ":nth-child(even)" - "even" em português "par" tembém resultando no mesmo ao escrever "2n"
+        */
+
+        tbody > tr:nth-child(odd) {
+            background-color:lightgray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color:lightgray;
+        }
+
+        pre {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        
+        TABLE
+        CAPTION (Legenda da Tabela)
+            THEAD (Cabeça - Cima)
+                TR, TD ,TH
+            TBODY (Corpo)
+                TR, TD, TH
+            TFOOT (Rodapé)
+                TR, TD, TH
+    -->
+    <table>
+    <caption>População das Unidades Federativas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width:50px;">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">46 081 801</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21 393 441</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 223 547</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 870 907</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">11 890 517</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">11 233 263</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">9 562 007</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num">9 268 836</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="num">8 711 196</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="num">8 187 029</td>
+                </tr>
+                <tr>
+                    <td>Goiás</td>
+                    <td class="num">7 423 629</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="num">7 018 211</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="num">4 321 616</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td class="num">4 164 468</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santo</td>
+                    <td class="num">4 126 854</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td class="num">3 893 659</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Norte</td>
+                    <td class="num">3 455 236</td>
+                </tr>
+                <tr>
+                    <td>Piauí</td>
+                    <td class="num">3 220 848</td>
+                </tr>
+                <tr>
+                    <td>Distrito Federal</td>
+                    <td class="num">2 996 899</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso do Sul</td>
+                    <td class="num">2 924 631</td>
+                </tr>
+                <tr>
+                    <td>Sergipe</td>
+                    <td class="num">2 299 425</td>
+                </tr>
+                <tr>
+                    <td>Rondônia</td>
+                    <td class="num">1 751 950</td>
+                </tr>
+                <tr>
+                    <td>Tocantins</td>
+                    <td class="num">1 586 859</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td class="num">884 372</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">806 517</td>
+                </tr>
+                <tr>
+                    <td>Roraima</td>
+                    <td class="num">738 772</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scop="row">Total de Habitantes</th>
+                    <td scop="row" class="num"><strong>213.035.234</strong></td>
+                </tr>
+            </tfoot>
+    </table>
+    <h2>Detalhes semânticos(observações importantes) sobre o tema de listas</h2>
+
+    <h3>Exemplos</h3>
+
+    <p>
+        <pre>
+            HIERARQUIA DE TABELAS (simples)
+        TABLE = tabela
+            TABLE ROW = linha de tabela
+                TABLE HEADER = cabeçalho de tabela 
+                TABLE DATA = dado de tabela 
+        </pre>
+    <hr>
+        <pre>
+            ANATOMIA PARA TABELAS GRANDES
+
+            TABLE
+            CAPTION (Legenda da Tabela)
+                THEAD (Cabeça - Cima)
+                    TR, TD ,TH
+                TBODY (Corpo)
+                    TR, TD, TH
+                TFOOT (Rodapé)
+                    TR, TD, TH
+        </pre>
+    </p>
+
+    <p>
+        <pre>
+            <code>
+                  &lt;table&gt;
+    &lt;caption&gt;População das Unidades Federativas&lt;/caption&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th <mark style="background-color:aqua;">scope="col"</mark>&gt;Estado&lt;/th&gt;
+                    &lt;th <mark style="background-color:aqua;">scope="col"</mark>style="width:50px;"&gt;População&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;São Paulo&lt;/td&gt;
+                    &lt;td class="num"&gt;46 081 801&lt;/td&gt;
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td&gt;Minas Gerais&lt;/td&gt;
+                    &lt;td class="num"&gt;21 393 441&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Rio de Janeiro&lt;/td&gt;
+                    &lt;td class="num"&gt;17 223 547&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Bahia&lt;/td&gt;
+                    &lt;td class="num"&gt;14 870 907&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Paraná&lt&lt;/td&gt;
+                    &lt;td class="num"&gt;11 890 517&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Rio Grande do Sul&lt;/td&gt;
+                    &lt;td class="num"&gt;11 233 263&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Pernambuco&lt;/td&gt;
+                    &lt;td class="num"&gt;9 562 007&lt;&lt;/td&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Ceará&lt;&lt;/td&gt;
+                    &lt;td class="num"&gt;9 268 836&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Santa Catarina&lt;/td&gt;
+                    &lt;td class="num"&gt;8 187 029&lt;/td &gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Goiás&lt;/td&gt;
+                    &lt;td class="num"&gt;7 423 629&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Maranhão&lt;/td>
+                    &lt;td class="num"&gt;7 018 211&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Amazonas&lt;/td&gt;
+                    &lt;td class="num"&gt;4 321 616&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Paraíba&lt;/td&gt;
+                    &lt;td class="num"&gt;4 164 468&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Espírito Santo&lt;/td&gt;
+                    &lt;td class="num"&gt;4 126 854&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Mato Grosso&lt;/td&gt;
+                    &lt;td class="num"&gt;3 893 659&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Rio Grande do Norte&lt;/td&gt;
+                    &lt;td class="num"&gt;3 455 236&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Piauí&lt;/td&gt;
+                    &lt;td class="num"&gt;3 220 848&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Distrito Federal&lt;/td&gt;
+                    &lt;td class="num"&gt;2 996 899&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Mato Grosso do Sul&lt;/td&gt;
+                    &lt;td class="num"&gt;2 924 631&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td>Sergipe&lt;/td&gt;
+                    &lt;td class="num"&gt;2 299 425&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Rondônia&lt;/td&gt;
+                    &lt;td class="num"&gt;1 751 950&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Tocantins&lt;/td&gt;
+                    &lt;td class="num"&gt;1 586 859&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Acre&lt;/td&gt;
+                    &lt;td class="num"&gt;884 372&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Amapá&lt;/td&gt;
+                    &lt;td class="num"&gt;806 517&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt; Roraima &lt;/td&gt;
+                    &lt;td&gt; class="num"&gt;738 772&lt;/td&gt;
+                &lt;tr&gt;
+                &lt;/tbody&gt;
+            &lt;tfoot&gt;
+                &lt;tr&gt;
+                    &lt;th <mark style="background-color:aqua;">scop="row"</mark>&gt;Total de Habitantes&lt;/th&gt;
+                    &lt;td <mark style="background-color:aqua;">scop="row"</mark> class="num"&gt;&lt;strong&gt;213.035.234&lt;/strong&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tfoot&gt;
+            </code>
+        </pre>
+    </p>
+
+    <h3>Propriedade "<mark style="background-color: aqua;">scope</mark>" em hmtl</h3>
+        <p>A propriedade "scope" em HTML é um atributo usado em elementos de tabela (&lt;th&gt; e &lt;caption&gt;) para indicar se o cabeçalho se refere a uma linha (row), uma coluna(col), um grupo de linhas(rowgroup), ou um grupo de colunas (colgroup).</p>
+        <p>Essa propriedade não altera nada visualmente, mas semanticamente ajuda nos mecanismos de busca do site.</p>
+
+        <p>Aula onde é explicado esse detalhe:</p>
+
+        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/ZnjU3PzhGi0?si=GIe0fmcH6kBzlCJd&amp;start=279" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        <p>Começe</p>
+</body>
+</html>
