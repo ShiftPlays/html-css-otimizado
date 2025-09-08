@@ -12,6 +12,8 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position:relative;
+
         }
 
         td, th {
@@ -32,6 +34,16 @@
 
         ":nth-child(even)" - "even" em português "par" tembém resultando no mesmo ao escrever "2n"
         */
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+
+            /*
+            Essa declaração serve para fazer cabeçalho fixo porém não funciona em todos os navegadores
+            */
+        }
 
         tbody > tr:nth-child(odd) {
             background-color:lightgray;
@@ -344,6 +356,5 @@
         <p>Aula onde é explicado esse detalhe:</p>
 
         <p><iframe width="560" height="315" src="https://www.youtube.com/embed/ZnjU3PzhGi0?si=GIe0fmcH6kBzlCJd&amp;start=279" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
-        <p>Começe</p>
 </body>
 </html>
