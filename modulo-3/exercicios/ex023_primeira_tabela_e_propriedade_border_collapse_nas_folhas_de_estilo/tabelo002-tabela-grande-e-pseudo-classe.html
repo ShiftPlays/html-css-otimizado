@@ -26,15 +26,6 @@
             color: white;
         }
 
-        /*
-        Sobre pseudo-classe logo a baixo:
-        ":nth-child()" que ocasiona o efeito zebrado na tabela. 
-
-        ":nth-child(odd)" - "odd" em português "impar" também resultando no mesmo ao escrever "2n-1".
-
-        ":nth-child(even)" - "even" em português "par" tembém resultando no mesmo ao escrever "2n"
-        */
-
         thead > tr > th {
             position: sticky;
             top: -1px;
@@ -48,6 +39,15 @@
         tbody > tr:nth-child(odd) {
             background-color:lightgray;
         }
+
+        /*
+        Sobre pseudo-classe logo a baixo:
+        ":nth-child()" que ocasiona o efeito zebrado na tabela. 
+
+        ":nth-child(odd)" - "odd" em português "impar" também resultando no mesmo ao escrever "2n-1".
+
+        ":nth-child(even)" - "even" em português "par" tembém resultando no mesmo ao escrever "2n"
+        */
 
         td.num {
             text-align: right;
