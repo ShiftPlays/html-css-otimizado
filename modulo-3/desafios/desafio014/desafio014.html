@@ -26,8 +26,15 @@
             font-size: 1.2em;
         }
 
-        thead > tr > th.linha:nth-child(odd) {
+        tr > th.linha {
             background-color: gray;
+            color: white;
+        }
+
+        td.cinza {
+            background-color: gray;
+            font-weight: bold;
+            color: white;
         }
 
     </style>
@@ -46,8 +53,8 @@
                 <th rowspan="2" scope="col" class="linha">Média</th>
             </tr>
             <tr>
-                <th scope="col">Nota 1</th>
-                <th scope="col">Nota 2</th>
+                <th scope="col" class="linha">Nota 1</th>
+                <th scope="col" class="linha">Nota 2</th>
             </tr>
         </thead>
         <tbody>
@@ -77,8 +84,8 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4" scope="row">Mádia de Exatas</th>
-                <td>0.0</td>
+                <th colspan="4" scope="row" class="linha">Mádia de Exatas</th>
+                <td class="cinza">0.0</td>
             </tr>
             <tr>
                 <th rowspan="2" scope="rowgroup">Humanas</th>
@@ -92,6 +99,10 @@
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row" class="linha">Média de Humanas</th>
+                <td class="cinza">0.0</td>
             </tr>
         </tbody>
     </table>
